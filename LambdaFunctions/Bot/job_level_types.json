@@ -1,0 +1,16 @@
+{
+    "enumerationValues": [
+        {
+            "value": "professional"
+        }, 
+        {
+            "value": "young_talent"
+        }
+    ], 
+    "name": "JobLevel", 
+    "checksum": "checksum", 
+    "version": "$LATEST", 
+    "lastUpdatedDate": 0, 
+    "createdDate": 0, 
+    "description": "Types of level to choose from"
+}

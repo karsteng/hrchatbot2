@@ -1,0 +1,1226 @@
+<!DOCTYPE html>
+<html class="ger Overview" lang="de" dir="ltr">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="msapplication-config" content="none" />
+	<meta name="robots" content="all, index">
+	<meta name="description" content="umantis Talent Management">
+	<meta name="keywords" content="umantis, human resources, hr solutions, umantis Talent Management">
+	<meta name="author" content="umantis team">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+	<link rel="stylesheet" href="/css/newtemplates2012/umantis.css?21.2.4.0" type="text/css" />
+	<!--[if gte IE 6]>
+			<script type="text/javascript">
+				var ie_css = "";
+				try
+				{
+					if(document.documentMode==8) {
+						ie_css = "ie8.css";
+					}
+					else if (document.documentMode==9) {
+						ie_css = "ie9.css";
+					}
+					else {
+						ie_css = "ie7.css";
+					}
+				} catch(exception) {
+					ie_css="ie7.css";
+				}
+				document.writeln('<link rel="stylesheet" href="/css/newtemplates2012/' + ie_css + '" type="text/css" media="screen" charset="utf-8" />');
+			</script>
+		<![endif]-->
+	<noscript>
+		<!--[if IE 7]><link rel="stylesheet" href="/css/newtemplates2012/ie7.css" type="text/css" media="screen" charset="utf-8" /><![endif]-->
+		<!--[if IE 8]><link rel="stylesheet" href="/css/newtemplates2012/ie8.css" type="text/css" media="screen" charset="utf-8" /><![endif]-->
+		<!--[if IE 9]><link rel="stylesheet" href="/css/newtemplates2012/ie9.css" type="text/css" media="screen" charset="utf-8" /><![endif]-->
+	</noscript>
+	<!--[if IE 8]>
+		<style>
+		body {
+		    background-image: url("/img/logo.png")!important;
+		}
+		</style>
+		<![endif]-->
+	<link rel="stylesheet" href="/pubhtml/2388/customer/external2012.css" type="text/css">
+	<link rel="shortcut icon" href="/pubhtml/favicon.ico">
+	<title>Stellenangebote | Haufe Gruppe | umantis Talent Management</title>
+	<script type="text/javascript" src="/css/js/header.min.js?21.2.4.0"></script>
+	<script type="text/javascript">
+		var customerID = '2388';
+		var pageType = 'Overview';
+		var serializedForm;
+		var autocomplete_searches = new Array();
+		var dontfocus = 0;
+		var tableVCardSwitching = 0;
+		var StandardText = new Object();
+		StandardText['WizardHelpStopPlayer'] = "Assistent beenden";
+		StandardText['SingleButton'] = "Zur�ck";
+		StandardText['CwcPanelTitle'] = "Ansicht anpassen";
+		StandardText['Password'] = "Passwort";
+		StandardText['FontSizeSmall'] = "Kleine Schrift";
+		StandardText['EeocTextVeteran'] = "Please click to view a definition of veteran.";
+		StandardText['DateformatTMJHM_en-us'] = "Datumsformat: MM/TT/JJJJ @ hh:mm TT";
+		StandardText['ShortKeyInfo'] = "Kurzwahl-Taste";
+		StandardText['Cancel'] = "Abbrechen";
+		StandardText['SearchNext'] = "&lt;i class=&quot;icon itnav_next&quot; title=&quot;n�chste&quot;&gt;&lt;/i&gt;";
+		StandardText['Send'] = "Senden";
+		StandardText['ErrorNoRights'] =
+			"&lt;b&gt;Keine Zugriffsberechtigung f�r die aufgerufene Seite&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;Sie haben eine Seite aufgerufen, f�r die ein Zugang mit spezieller Berechtigung erforderlich ist.&lt;br/&gt;&lt;br/&gt;M�gliche Ursachen:&lt;br/&gt;&lt;ul&gt;&lt;li&gt;Sie sind einem Link gefolgt, der nicht f�r Sie bestimmt war.&lt;/li&gt;&lt;li&gt;Sie verwenden einen Benutzernamen, der f�r diesen Bereich keine Berechtigung hat.&lt;/li&gt;&lt;/ul&gt;&lt;br/&gt;Was Sie versuchen k�nnen, wenn Sie mit einem falschen Benutzernamen angemeldet sind: &lt;ul&gt;&lt;li&gt;&lt;a href=&quot;?Logout=6&quot;&gt;Neu anmelden&lt;/a&gt;.&lt;/li&gt;&lt;li&gt;Auf die vorherige Seite zur�ckkehren.&lt;/li&gt;&lt;/ul&gt;";
+		StandardText['DropDownChoose'] = "Bitte w�hlen";
+		StandardText['AllOrBrowsing'] = "Irgendetwas von oben";
+		StandardText['LinkedTextLabelText'] = "Linkbezeichnung";
+		StandardText['CwcEditVisibility'] = "Ausblenden";
+		StandardText['Yes'] = "ja";
+		StandardText['CwcOff'] = "aus";
+		StandardText['WizardNextStep'] = "Schritt vor";
+		StandardText['OverviewSearchAdvanced'] = "Erweiterte Suche";
+		StandardText['BookmarkMake'] = "Lesezeichen erstellen";
+		StandardText['Print'] = "Druckansicht";
+		StandardText['ConnectRemove'] = "Zuweisung aufheben";
+		StandardText['ErrorAccessDenied'] = "&lt;b&gt;Kein Zugriff&lt;/b&gt;";
+		StandardText['Freak'] =
+			"Bitte &lt;a href='/Administration/Backup/Start'&gt;sichern&lt;/a&gt; Sie Ihre Ansichtskonfiguration bevor Sie �nderungen vornehmen.";
+		StandardText['CwcEditOnlyElementHelp'] = "Sonst werden alle Elemente mit diesem Original-Inhalt umbenannt.";
+		StandardText['NoSelection'] = "Keine Angabe";
+		StandardText['No'] = "nein";
+		StandardText['SearchFirst'] = "&lt;i class=&quot;icon itnav_first&quot; title=&quot;erste&quot;&gt;&lt;/i&gt;";
+		StandardText['CwcConfigLevel'] = "Konfigurations-Ebene";
+		StandardText['CheckVisibles'] = "angezeigte";
+		StandardText['TitleSearch'] = "Suche";
+		StandardText['DateformatMJ_default'] = "";
+		StandardText['CwcConfigLevelMandate'] = "Mandant";
+		StandardText['OverviewSearchReset'] = "Suche zur�cksetzen";
+		StandardText['OverviewSearchText'] = "Suche nach";
+		StandardText['MultiActionMoreThan1000Selected'] = "Vorsicht! Mehr als 1000 Elemente ausgew�hlt.";
+		StandardText['BrowsingChosenCriteria'] = "Was m�chten Sie tun?";
+		StandardText['SecondsText'] = "Sekunden";
+		StandardText['NoInternetConnectionMessage'] =
+			"Bitte stellen Sie eine Verbindung mit dem Internet her, um weiter zu arbeiten.";
+		StandardText['CwcUnHide'] = "Einblenden";
+		StandardText['MinutesText'] = "Minuten";
+		StandardText['AutoLogoutIn'] = "Automatische Abmeldung in";
+		StandardText['CookieDisabled'] =
+			"Ihr Browser unterst�tzt leider keine Cookies. Bitte aktivieren Sie die Cookies in Ihrem Webbrowser f�r eine vollst�ndige und fehlerfreie Nutzung.";
+		StandardText['Since'] = "Seit";
+		StandardText['ExtendedSearchTitle'] = "Erweiterte Suche";
+		StandardText['Login'] = "Benutzername";
+		StandardText['Or'] = "oder";
+		StandardText['CwcMainNavEdit'] = "Ansicht anpassen";
+		StandardText['WizardInfoPageNotAvailable'] =
+			"Diese Seite ist nicht verwendbar f�r Wizards - bitte navigieren Sie weiter.";
+		StandardText['ErrorNoScreen'] =
+			"&lt;b&gt;Die aufgerufene Seite existiert nicht&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;Sie befinden sich auf dem umantis-Websystem, die aufgerufene Seite existiert jedoch leider nicht.&lt;br/&gt;&lt;br/&gt;M�gliche Ursachen:&lt;br/&gt;&lt;ul&gt;&lt;li&gt;Ein falscher oder alter Link f�hrte auf diese Seite.&lt;/li&gt;&lt;li&gt;Bei der Adresseingabe ist ein Tippfehler unterlaufen.&lt;/li&gt;&lt;/ul&gt;&lt;br/&gt;&lt;br/&gt;Was Sie versuchen k�nnen:&lt;br/&gt;&lt;ul&gt;&lt;li&gt;Kontrollieren Sie die Adresse.&lt;/li&gt;&lt;li&gt;Geben Sie die Adresse neu ein.&lt;/li&gt;&lt;li&gt;Kehren Sie auf die vorherige Seite zur�ck.&lt;/li&gt;&lt;/ul&gt;";
+		StandardText['BrowsingQuestsPoints'] = "oder mehr Punkte";
+		StandardText['CwcShowLangIDs'] = "LangIDs anzeigen";
+		StandardText['OverviewSearchNoResult'] =
+			"&lt;span class=&quot;color-grey-m&quot;&gt;&lt;i&gt;Keine Eintr�ge gefunden. Sie k�nnen Folgendes versuchen:&lt;ul&gt;&lt;li&gt;Ihre Suchkriterien �ndern&lt;/li&gt;&lt;li&gt;Die Suche zur�cksetzen, um Suchkriterien zu l�schen&lt;/li&gt;&lt;li&gt;Auf Gross- und Kleinschreibung achten&lt;/li&gt;&lt;li&gt;Die Symbole * als Platzhalter f�r mehrere und ? f�r ein Zeichen nutzen.&lt;/li&gt;&lt;/ul&gt;&lt;/i&gt;&lt;/span&gt;";
+		StandardText['Edit'] = "&lt;i class=&quot;icon iedit&quot; title=&quot;Bearbeiten&quot;&gt;&lt;/i&gt;";
+		StandardText['HoursText'] = "Stunden";
+		StandardText['BrowsingAgeFrom'] = "von";
+		StandardText['WizardInfoFillup'] = "Bitte f�llen Sie die notwendigen Felder f�r den neuen Schritt aus.";
+		StandardText['Save'] = "Speichern";
+		StandardText['OrderAsc'] = "aufw�rts (a-z)";
+		StandardText['LinkedTextLabelLink'] = "Internet-Adresse";
+		StandardText['WizardInfoCloseAfterSave'] =
+			"Nach dem Hinzuf�gen k�nnen Sie dieses Browserfenster/diesen BrowserTab wieder schliessen und an der Stelle mit Aufzeichnen fortfahren, wo Sie vorher waren.";
+		StandardText['ID'] = "ID";
+		StandardText['CwcEditMAVisibilityHelp'] = " ";
+		StandardText['WizardSaveLink'] = "&lt;i class=&quot;icon isave&quot;&gt;&lt;/i&gt;";
+		StandardText['EeocTextEthnicity'] = "Please click to view a definition of ethnicity.";
+		StandardText['TemporaryDesignActive'] = "Neues Design ist tempor�r aktiviert";
+		StandardText['ActionBarTitleSearch'] = "Suche";
+		StandardText['AddDetailsAndEdit'] = "Details&amp;�ndern";
+		StandardText['OverviewBookmarkSearch'] = "Lesezeichen";
+		StandardText['NoInternetConnection'] = "Keine Internetverbindung!";
+		StandardText['CWCTableSortColumn'] = "Standardm�ssig sortiert nach Spalte";
+		StandardText['Answers'] = "Antworten";
+		StandardText['DateformatMJ'] = "Datumsformat: MM.JJJJ";
+		StandardText['FontSizeMedium'] = "Normale Schrift";
+		StandardText['CwcEdit'] = "Element bearbeiten";
+		StandardText['NewCreate'] = "Erstellen";
+		StandardText['ShowHtmlAsPlainTextHeader'] = "Non-HTML Nachricht";
+		StandardText['ResetRanks'] = "Reihenfolge der Elemente zur�cksetzen";
+		StandardText['CwcTableSettings'] = "Tabelleneinstellungen";
+		StandardText['Selected'] = "ausgew�hlt";
+		StandardText['CwcActives'] = "nur aktive";
+		StandardText['CalendarWeekDayNames'] = "Mo|Di|Mi|Do|Fr|Sa|So";
+		StandardText['BrowsingMissingFrom'] = "Kriterium im Anforderungsprofil nicht definiert.";
+		StandardText['SortDown'] = "Absteigend sortieren";
+		StandardText['CwcConfigLevelCustomer'] = "Kunde";
+		StandardText['CwcEditVisibilityHelp'] = "&amp;nbsp;";
+		StandardText['WizardRecorderActive'] = "Assistenten-Aufzeichnung aktiv";
+		StandardText['DeleteText'] = "l�schen";
+		StandardText['OverviewDefaultSearch'] = "Meine Standardsuche";
+		StandardText['CwcConfigLevelUser'] = "Benutzer";
+		StandardText['CwcEditOriginalValue'] = "Original-Inhalt";
+		StandardText['SearchLast'] = "&lt;i class=&quot;icon itnav_last&quot; title=&quot;letzte&quot;&gt;&lt;/i&gt;";
+		StandardText['CwcEditOnlyElement'] = "Spezifische Umbenennnung&lt;br/&gt;(nur f�r dieses Element)";
+		StandardText['InfoFormMustFields'] = "Bitte alle Felder mit * ausf�llen";
+		StandardText['Logout'] = "Abmelden";
+		StandardText['CwcSeparationEditableAttributes'] = "Bearbeitbare Attribute";
+		StandardText['ChangeFontSize'] = "Schriftgr�sse";
+		StandardText['Delete'] = "&lt;i class=&quot;icon idelete&quot; title=&quot;L�schen&quot;&gt;&lt;/i&gt;";
+		StandardText['CwcEditOnlyElementDelete'] =
+			"( =&gt; L�schen Sie die oberen spezifischen Umbenennungen, um nach dem Speichern entweder die globalen Umbenennungen oder die Original-Inhalte von umantis zu verwenden.)";
+		StandardText['DateformatJ'] = "Datumsformat: JJJJ";
+		StandardText['TableDisplayTo'] = "bis";
+		StandardText['DateformatJ_default'] = "";
+		StandardText['CwcOn'] = "ein";
+		StandardText['FontSizeLarge'] = "Grosse Schrift";
+		StandardText['OverviewNoEntries'] =
+			"&lt;i&gt; &lt;span class=&quot;color-grey-m&quot;&gt; Es wurden noch keine Eintr�ge erfasst, die hier angezeigt werden k�nnten.&lt;/span&gt;&lt;/i&gt;";
+		StandardText['CwcEditTextHelp'] = " ";
+		StandardText['CwcSeparationHide'] = "Sichtbarkeit";
+		StandardText['BrowsingPositionToPersons'] = "Interaktive Suche nach geeigneten Bewerbern";
+		StandardText['Main'] = "Hauptseite";
+		StandardText['VariableFinderInfo'] = "kontextabh�ngige Variabel(n)";
+		StandardText['TableMultiactionChoose'] = "Aktion w�hlen";
+		StandardText['CwcAll'] = "alle";
+		StandardText['Finish'] = "Zur�ck";
+		StandardText['ConnectAdd'] = "Zuweisen";
+		StandardText['FormCheckInfo'] = "Bitte f�llen Sie folgende Felder aus";
+		StandardText['BackToBrowsing'] = "Suchkriterien anpassen";
+		StandardText['SessionTimeoutExtend'] = "Sitzungsdauer verl�ngern";
+		StandardText['ActionBarTitleAction'] = "Was m�chten Sie tun?";
+		StandardText['DeleteButton'] = "L�schen";
+		StandardText['WhatToCheck'] = "ausw�hlen:";
+		StandardText['CwcMainNavShow'] = "Anpassungsmodus schliessen";
+		StandardText['AnswerQuestion'] = "Pflichtfrage: Bitte beantworten Sie Frage";
+		StandardText['ShowNoDetails'] =
+			"&lt;i&gt; &lt;span class=&quot;color-grey-m&quot;&gt; Keine Details erfasst&lt;/span&gt;&lt;/i&gt;";
+		StandardText['ResetBrowsing'] = "Interaktive Suche zur�cksetzen";
+		StandardText['OverviewSearchResetDefault'] = "Standardsuche ausf�hren";
+		StandardText['ConfirmDeleteEntry'] = "Sind Sie sicher, dass Sie diesen Eintrag l�schen m�chten?";
+		StandardText['CwcEditMAVisibility'] = "Multiaction-Eintrag ausblenden";
+		StandardText['SessionPreTimeoutMessage'] =
+			"Ihre Sitzung endet nach dieser Zeit und Sie werden automatisch vom System abgemeldet. Nicht gespeicherte �nderungen gehen gegebenenfalls verloren. Klicken Sie auf &quot;Sitzungsdauer verl�ngern&quot;, um die automatische Abmeldung abzubrechen und die Sitzungsdauer zu verl�ngern.";
+		StandardText['ShowConnectorTableRemove'] = "Entfernen";
+		StandardText['BrowsingResetCriteriaHelp'] =
+			"Klicken Sie bitte auf diesen Pfeil, um die jeweils links stehende Einschr�nkung (inkl. untergeordnete Einschr�nkungen) aufzuheben.";
+		StandardText['CheckAllToCheckSingleWarning'] =
+			"Die Auswahloption �alle� wird durch Abw�hlen eines einzelnen Eintrags wieder r�ckg�ngig gemacht. Hierdurch sind jetzt nur die Eintr�ge der angezeigten Seite ausgew�hlt.";
+		StandardText['ActiveStyleTester'] = "Styletester aktiv";
+		StandardText['CWCSpecialGroupInfoText'] = "(Spezial-Einstellung)";
+		StandardText['Okay'] = "Okay";
+		StandardText['TableMultiactionDo'] = "Ausf�hren";
+		StandardText['SessionTimeout'] = "Ihre Sitzung ist abgelaufen!";
+		StandardText['SearchExcludedWords'] = "Folgende Suchbegriffe wurden f�r die Suche nicht ber�cksichtigt";
+		StandardText['SearchPrevious'] = "&lt;i class=&quot;icon itnav_prev&quot; title=&quot;vorherige&quot;&gt;&lt;/i&gt;";
+		StandardText['Add'] = "Hinzuf�gen";
+		StandardText['SortUp'] = "Aufsteigend sortieren";
+		StandardText['CalendarMonthNames'] =
+			"Januar|Februar|M�rz|April|Mai|Juni|Juli|August|September|Oktober|November|Dezember";
+		StandardText['Calendar'] = "Kalender";
+		StandardText['CwcEditGeneralElement'] = "Allgemeine Umbenennungen:";
+		StandardText['EditText'] = "bearbeiten";
+		StandardText['BookmarkNoSupportLink'] =
+			"Klicken Sie auf diesen Link und f�gen Sie die Seite nach dem Laden zu Ihren Favoriten hinzu.";
+		StandardText['DateformatTMJ_default'] = "Datumsformat: TT.MM.JJJJ";
+		StandardText['BrowsingAll'] = "Alle";
+		StandardText['NewCreateAndConnect'] = "Erstellen und zuweisen";
+		StandardText['DateformatTMJ_en-us'] = "Datumsformat: MM/TT/JJJJ";
+		StandardText['BookmarkJS'] = "test";
+		StandardText['CwcSelectLanguage'] = "Sprache wechseln";
+		StandardText['CheckAll'] = "alle";
+		StandardText['Sort'] = "Sortieren:";
+		StandardText['UncheckAll'] = "keine";
+		StandardText['TableDisplayOf'] = "von";
+		StandardText['CwcShowFields'] = "Felder anzeigen";
+		StandardText['WizardPreviousStep'] = "Schritt zur�ck";
+		StandardText['Search'] = "Suchen";
+		StandardText['OrderDesc'] = "abw�rts (z-a)";
+		StandardText['VariableFinderClose'] = "Variablen-Finder deaktivieren";
+		StandardText['OverviewSearch'] = "Suche";
+		StandardText['LoginFailed'] =
+			"&lt;span class=&quot;color-warn&quot;&gt;&lt;b&gt;Benutzername oder Passwort sind nicht korrekt&lt;/b&gt;&lt;/span&gt;Der Benutzername, das Passwort oder die Kombination aus beiden ist nicht korrekt (bitte beachten Sie die Gross-/Kleinschreibung). Bitte wiederholen Sie die Eingabe oder bestellen Sie sich ein neues Passwort mit Hilfe der &quot;Passwort vergessen&quot;-Funktion.";
+		StandardText['CwcSeparationEditableAttributesGlobalElement'] =
+			"(Folgendes Element ist nur global und nicht individuell anpassbar)";
+		StandardText['DateformatTMJHM_default'] = "Datumsformat: TT.MM.JJJJ @ hh:mm";
+		StandardText['Display'] = "Bewerber anzeigen";
+		StandardText['SessionPostTimeoutMessage'] =
+			"Die aktuelle Sitzung wurde aufgrund von Inaktivit�t beendet. Sie k�nnen dieses Formular jetzt nicht mehr speichern. Speichern Sie Ihre �nderungen vor dem Verlassen der Seite gegebenenfalls lokal ab, um Datenverlust zu vermeiden.";
+		StandardText['ShowConnectorTableDetailsAndEdit'] = "Details&amp;�ndern";
+		StandardText['CwcHide'] = "Ausblenden";
+		StandardText['TableSortStringWrong'] =
+			"Die Bl�tter-Einstellung f�r diese Tabelle kann den Inhalt nicht mehr abbilden - zur�ck zu Seite 1";
+		StandardText['And'] = "und";
+		StandardText['FileAsDownload'] = "Datei als Download aufrufen";
+		StandardText['TableNoSearch1'] =
+			"Die Eintr�ge wurden &lt;b&gt;ausgeblendet&lt;/b&gt;. Bitte verwenden Sie die Suche, um bestimmte Eintr�ge anzuzeigen.";
+		StandardText['BrowsingAgeTo'] = "bis";
+		StandardText['BookmarkHelperClose'] = "schliessen";
+		StandardText['LeavingDataUnsaved'] = "Sie haben Daten ge�ndert aber nicht gespeichert.";
+		StandardText['WizardHelpStopRecorder'] = "Aufzeichnung stoppen";
+		StandardText['BrowsingQuestsMoreThan'] = "&amp;nbsp;";
+		StandardText['CopyrightExtern'] = "a solution";
+		var ErrorHandling = new Object();
+		ErrorHandling['ErrorApiTimeout'] =
+			"&lt;span class=&quot;color-warn&quot;&gt;&lt;b&gt;Anbieter konnte nicht erreicht werden. Bitte geben Sie Ihre Daten manuell ein oder versuchen Sie es sp�ter erneut.&lt;/span&gt;.";
+		ErrorHandling['errorFileName'] =
+			"Der Dateiname enth�lt ung�ltige Zeichen. Bitte benutzen Sie keine Klammern im Dateinamen.";
+		ErrorHandling['errorSecureTokenFailed'] =
+			"Formular wurde nicht gespeichert, weil das Sicherheitstoken nicht mitgeschickt wurde. (Das passiert auch, wenn Sie zweimal speichern.)";
+		ErrorHandling['errorNoZero'] = "0 als Eingabewert ist nicht gestattet.";
+		ErrorHandling['errorFileVirusCheck'] =
+			"Die Datei ist von einem Virus infiziert! Bitte pr�fen Sie Ihr System auf Viren.";
+		ErrorHandling['errorEmailMultiple'] = "Bitte geben Sie g�ltige E-Mail-Adresse(n) mit Komma getrennt an.";
+		ErrorHandling['errorFileFormat'] = "Ung�ltiges Dateiformat.";
+		ErrorHandling['EditingFromListNotAllowed'] =
+			"Die Bearbeitung dieser dynamischen Liste kann nicht �ber diese Seite vorgenommen werden!";
+		ErrorHandling['errorMinLength'] = "Bitte geben Sie mindestens [errorMessageParam]  Zeichen ein.";
+		ErrorHandling['errorMimeTypeError'] = "Der Typ des Dokumentes stimmt nicht mit der Dateierweiterung �berein.";
+		ErrorHandling['errorInteger'] = "Bitte geben Sie einen ganzzahligen, numerischen Betrag als Ziffer an.";
+		ErrorHandling['PermissionDenied'] =
+			"Zugriff verweigert (fehlende Rolle) / Access denied (missing role) / Acc�s non autoris� (r�le manquant)";
+		ErrorHandling['PKILoginInvalid'] =
+			"Zugriff f�r automatischen Login mittels Zertifikat ist aktiviert, aber nicht korrekt konfiguriert.";
+		ErrorHandling['errorViastoProjectMissing'] =
+			"Es konnte kein entsprechendes Videointerview Projekt in viasto gefunden werden.";
+		ErrorHandling['errorMimeTypeRestriction'] =
+			"&lt;span class=&quot;color-warn&quot;&gt;&lt;b&gt;Der Upload war nicht erfolgreich! Die Datei entspricht nicht den Upload-Kriterien&lt;/a&gt;&lt;/b&gt;&lt;/span&gt;.";
+		ErrorHandling['AddToPosFailed'] =
+			"Die Bewerbung konnte nur teilweise oder gar nicht mit der Stelle verkn�pft werden. Deswegen wurde die originale Bewerbung nicht gel�scht. Bitte pr�fen Sie auf der Zielstelle ob die neue Bewerbung angelegt und die Daten vollst�ndig �bertragen wurden.";
+		ErrorHandling['errorPassword'] =
+			"Die geforderte Passwort-Komplexit�t ist nicht erf�llt: Kleinbuchstabe, Grossbuchstabe, Zahl, Sonderzeichen";
+		ErrorHandling['must'] = "Bitte angeben.";
+		ErrorHandling['errorIntegerPositive'] =
+			"Bitte geben Sie einen ganzzahligen, numerischen Betrag im positiven Bereich an.";
+		ErrorHandling['errorListNoMultiSelect'] = "Bitte nur einen Wert ausw�hlen";
+		ErrorHandling['errorIP'] =
+			"Bitte geben Sie eine g�ltige IP an. Folgende Formate k�nnen verwendet werden: 127.0.0.1 oder 127.0.*.* oder als Bereich: 127.0.0.1-127.0.1.1 oder 127.0.*.*-127.1.*.*";
+		ErrorHandling['errorNoSpace'] = "Bitte keine Leerzeichen verwenden.";
+		ErrorHandling['PMSExportExceedsMaxSize'] =
+			"Die �bermittlung der Daten ist fehlgeschlagen. Der zu �bermittelnde Inhalt �berschreitet die zugelassene Maximalgr�sse.";
+		ErrorHandling['NoSelection'] = "Sie haben keine Eintr�ge zur Bearbeitung ausgew�hlt.";
+		ErrorHandling['errorFileEmpty'] =
+			"Beim der �bermittlung der Datei ist ein Fehler passiert. Bitte senden Sie sie erneut.";
+		ErrorHandling['errorNoPipe'] = "Bitte verwenden Sie kein Pipe '|' innerhalb Ihres Passwortes.";
+		ErrorHandling['errorDate'] = "Bitte geben Sie ein g�ltiges Datum ein.";
+		ErrorHandling['errorViastoProjectError'] = "Das Videointerview Projekt konnte nicht angelegt werden.";
+		ErrorHandling['errorSpecificFileName'] =
+			"Datei hat den falschen Namen. Bitte unterhalb des Dokumentenfeldes den richtigen Namen entnehmen.";
+		ErrorHandling['errorTime'] = "Bitte geben Sie eine g�ltige Zeit an.";
+		ErrorHandling['errorViastoProjectURIMissing'] =
+			"Es konnte kein Link zu einem Videointerview Projekt gefunden werden.";
+		ErrorHandling['errorMinLength[6]'] = "Bitte geben Sie mindestens [errorMessageParam]  Zeichen ein.";
+		ErrorHandling['errorViastoCandidateError'] = "Die Bewerber konnten nicht zum Videointerview eingeladen werden.";
+		ErrorHandling['errorViastoProjectNotActive'] =
+			"Das entsprechende Videointerview Projekt ist inaktiv. Bewerber k�nnen nur zu einem aktiven Videointerview hinzugef�gt werden.";
+		ErrorHandling['TimeZoneGuessFailedAnonymous'] =
+			"Leider konnten wir nicht feststellen, in welcher Zeitzone Sie sich befinden und haben Europe/Zurich festgelegt.";
+		ErrorHandling['errorMultiActionHash'] =
+			"Beim Vorbereiten der Action ist ein unerwarteter Fehler aufgetreten. Bitte versuchen Sie es erneut.";
+		ErrorHandling['errorEmail'] = "Bitte geben Sie eine g�ltige E-Mail-Adresse an.";
+		ErrorHandling['errorGeneralFileSize'] = "Datei zu gross (maximal sind [errorMessageParam] Megabyte erlaubt).";
+		ErrorHandling['errorPasswordChange'] = "Das alten und das neue Passwort unterscheiden sich nicht.";
+		ErrorHandling['errorNoSpecialCharacters'] = "Bitte keine Sonderzeichen verswenden.";
+		ErrorHandling['noPastDate'] = "Bitte geben Sie ein in der Zukunft liegendes Datum ein.";
+		ErrorHandling['errorUniqueCheck'] = "Der eingegebene Wert ist bereits im System vorhanden.";
+		ErrorHandling['noFutureDate'] = "Bitte geben Sie ein vergangenes Datum ein.";
+		ErrorHandling['MaxSelectionExceeded'] =
+			"Sie haben mehr Eintr�ge als zugelassen gew�hlt. Bitte reduzieren Sie Ihre Auswahl auf maximal [MaxSelectionEntries].";
+		ErrorHandling['errorUnallowedContent'] = "Sie haben unerlaubte HTML Tags verwendet.";
+		ErrorHandling['errorURL'] = "URL fehlerhaft";
+		ErrorHandling['errorViastoAuthorizationFailed'] =
+			"Der Login bei viasto ist fehlgeschlagen. Bitte �berpr�fen Sie die viasto-Zugangsdaten in Ihrem Benutzerprofil.";
+		ErrorHandling['errorViastoCompanyAlreadyMapped'] =
+			"Die CompanyID Ihres viasto-Benutzers ist bereits einer anderen Kundennummer zugewiesen. Bitte �berpr�fen Sie Ihr Benutzerprofil in viasto.";
+		ErrorHandling['LoginRejectNoMember'] =
+			"Ihre Eingaben stimmen, aber die Administration hat Ihren Zugriff noch nicht freigeschaltet. Bitte warten Sie auf den entsprechenden Bescheid.";
+		ErrorHandling['errorViastoProjectAlreadyPublished'] =
+			"Zu der aktuellen Stelle wurde bereites ein Projekt in viasto erstellt.";
+		ErrorHandling['errorValidateViastoSettings'] =
+			"Die Basisangaben zur Schnittstelle sind entweder unvollst�ndig oder fehlerhaft.";
+		ErrorHandling['errorCheckDateRangeSense'] =
+			"Sie haben keinen sinnvollen Zeitraum eingegeben, bitte wiederholen sie ihre Eingabe. &lt;br&gt;Die beiden Daten m�ssen gleiche Elemente enthalten und des Enddatum darf nicht kleiner sein als das Startdatum. &lt;br&gt;(Bsp. 12.12.2010 - 16.12.2010 oder 10.2009 - 09.2010)";
+		ErrorHandling['SAPByDesignExportFailed'] = "Die �bermittlung der Daten ist fehlgeschlagen.";
+		ErrorHandling['errorMaxLength'] = "Sie haben mehr als [errorMessageParam] Zeichen eingegeben.";
+		ErrorHandling['errorViastoCredentialsFailed'] =
+			"Benutzername und/oder Passwort zum viasto-Profil fehlen. Bitte �berpr�fen Sie die viasto-Zugangsdaten in Ihrem Benutzerprofil auf Vollst�ndigkeit.";
+		ErrorHandling['errorUniqueLogin'] = "Dieser Login ist bereits im System vorhanden.";
+		ErrorHandling['errorFileCopyError'] =
+			"Beim Hochladen der Datei ist ein Fehler unterlaufen - bitte wiederholen Sie den Vorgang.";
+		ErrorHandling['errorGeneralFileSizeInfo'] = "Datei zu gross. Erlaubt sind maximal:";
+		ErrorHandling['LoginFailed'] =
+			"Benutzername oder Passwort nicht korrekt&lt;br/&gt;Der Benutzername, das Passwort oder die Kombination aus beiden ist nicht korrekt (bitte beachten Sie Gross-/Kleinschreibung).";
+		ErrorHandling['errorViastoProjectArchivingFailedBecauseOfActiveCandidates'] =
+			"Sie k�nnen das Videointerview Projekt nicht l�schen, weil daf�r noch aktive Kandidaten existieren.";
+		ErrorHandling['LoginRejectNone'] =
+			"Ihre Eingaben stimmen, aber Sie werden als Nichtmitglied gef�hrt. Bitte benachrichtigen Sie die Administration, wenn dies irrt�mlich geschieht.";
+		ErrorHandling['errorViastoTokenAuthFailed'] =
+			"Die Authentifizierung zu viasto ist fehlgeschlagen. Bitte �berpr�fen Sie die viasto-Zugangsdaten in Ihrem Benutzerprofil auf ihre Richtigkeit.";
+		ErrorHandling['UnknownErrorInMultiaction'] =
+			"Beim Versuch diese Aktion auszuf�hren ist ein Fehler aufgetreten. Eventuell ist es notwendig, die Anzahl ausgew�hlter Eintr�ge zu reduzieren.";
+		ErrorHandling['errorSendEmail'] =
+			"Der gew�nschte E-Mail Versand ist leider fehlgeschlagen. Es konnten keine E-Mails erstellt werden. Bitte w�hlen Sie die Vorlage erneut aus. ";
+		ErrorHandling['TimeZoneGuessFailedLoggedInUser'] =
+			"Leider konnten wir nicht feststellen, in welcher Zeitzone Sie sich befinden und haben Europe/Zurich festgelegt. Sie k�nnen Ihre Zeitzone in den Einstellungen f�r Ihr Profil �ndern.";
+		ErrorHandling['errorViastoWhoAmIFailed'] =
+			"Beim Laden der Daten des aktuellen viasto-Profils ist ein Fehler aufgetreten.";
+		ErrorHandling['errorViastoProjectArchivingFailed'] = "Das Videointerview Projekt konnte nicht archiviert werden.";
+		ErrorHandling['errorDecimal'] = "Please enter a valid decimal number";
+		ErrorHandling['errorPasswordConfirm'] =
+			"Die Eintragungen unter &quot;Password&quot; und &quot;Confirm Password&quot; sind nicht identisch.";
+		ErrorHandling['TokenLoginFailed'] =
+			"&lt;span class=&quot;color-warn&quot;&gt;&lt;b&gt;Der Login war nicht erfolgreich! Bitte versuchen Sie es &lt;a href=&quot;/&quot;&gt;erneut&lt;/a&gt;&lt;/b&gt;&lt;/span&gt;.";
+		var PasswordHandling = new Object();
+		PasswordHandling['PasswordMinLength'] = "8";
+		PasswordHandling['AdditionalPwdSecurity'] = "";
+	</script>
+	<style id="antiClickjack"></style>
+	<script type="text/javascript">
+		var domainList;
+		domainList = $.trim('');
+		var parentURL = ((parent !== window) ? document.referrer : document.location) + ''; // Location object -> string type cast
+		// Framebuster should disable the embedding of the frame if it's url and embedder url dont
+		// match or if the embedder url is not in the allowed domainlist of the security settings.
+		// Embedding should work if there is no domain set in the security settings.
+		if ((getDomainName(self.location.href) !== getDomainName(parentURL)) && (self !== top) && (domainList.indexOf(
+				getDomainName(parentURL)) === -1) && domainList) {
+			var antiClickjack = document.getElementById("antiClickjack");
+			antiClickjack.innerHTML = 'body{display:none !important;}';
+		}
+
+		function getDomainName(url) {
+			var urlParts1 = url.split(/[/?#]/);
+			var urlParts2 = url.replace('http://', '').replace('https://', '').split(/[/?#]/);
+			return urlParts1[0] + "//" + urlParts2[0];
+		}
+	</script>
+</head>
+
+<body class="recruitingapp_1152359" id="top" data-ng-app="onlineStatusApp" data-ng-controller="OnlineStatusCtrl">
+	<div id="wrapper" class="wrapper">
+		<div class="customerlogo">
+			<img src="/pubhtml/logo.gif" alt="Logo">
+		</div>
+		<div id="ModalDiv" title="" style="display:none;">
+			<iframe id="thedialog" style="width: 100%; height:100%;"></iframe>
+		</div>
+		<div id="container_login">
+			<div class="container_actionbar_sh_AB">
+				<div class="sh_AB_NoCT">
+					<a id="ToogleAB" href="#" tabindex="73038">
+						<i class="icon iab_hide Toogle_img" title="Show-Hide Actionbar" aria-hidden="true"></i>
+						<span class="visually-hidden">Show-Hide Actionbar</span>
+					</a>
+				</div>
+				<div class="container_actionbar_NoCT">
+					<div class="actionbar_boundary_search">
+						<div class="actionbar">
+							<form action="/Jobs/All" method="post" enctype="multipart/form-data" class="actionbarform" id="actionbarform_1152368">
+								<input type="hidden" name="Search" value="Suchen">
+								<input type="hidden" name="token" value="0">
+								<input type="hidden" name="MultiActionUID" value="">
+								<h2 class="actionbar_title" title="Suche" id="actionbartitlesearch_70227">Suche </h2>
+								<div class="actionbar_content">
+									<fieldset class="actionbar_cell actionbar_cell_1152369">
+										<div class="actionbar_cell_content" id="actionbarelementlabel_1152369">
+											<legend class="actionbar_cell_label">Volltextsuche:</legend>
+										</div>
+										<div class="actionbar_cell_content" id="actionbarelement_1152369">
+											<br />
+											<input id="input_1152369" class="actionbarinputfixedwidth" type="text" size="55" name="searchFullPositionsConfExtPubAll"
+											    value="" tabindex="73040">
+										</div>
+										<div class="actionbar_cell_helptext" id="actionbarelementhelptext_1152369">&nbsp;</div>
+									</fieldset>
+									<fieldset class="actionbar_cell actionbar_cell_1152371">
+										<div class="actionbar_cell_content" id="actionbarelementlabel_1152371">
+											<legend class="actionbar_cell_label">Stellentitel:</legend>
+										</div>
+										<div class="actionbar_cell_content" id="actionbarelement_1152371">
+											<br />
+											<input id="input_1152371" class="actionbarinputfixedwidth" type="text" size="55" name="searchJobTitleExtPub"
+											    value="" tabindex="73042">
+										</div>
+										<div class="actionbar_cell_helptext" id="actionbarelementhelptext_1152371">&nbsp;</div>
+									</fieldset>
+									<fieldset class="actionbar_cell actionbar_cell_1152374">
+										<div class="actionbar_cell_content" id="actionbarelementlabel_1152374">
+											<legend class="actionbar_cell_label">Karrierelevel:</legend>
+										</div>
+										<div class="actionbar_cell_content" id="actionbarelement_1152374">
+											<br />
+											<select class="form_dropdown actionbarinputfixedwidth" id="input_1152374" name="searchPosition" tabindex="73044">
+												<option value="">Bitte w�hlen</option>
+												<option value="">-----------------------------------------</option>
+												<option id="input_1152374_option_1000148" value="1000148"
+												    title="Professional">Professional</option>
+												<option id="input_1152374_option_1000150" value="1000150" title="Young Talent">Young Talent</option>
+											</select>
+										</div>
+										<div class="actionbar_cell_helptext" id="actionbarelementhelptext_1152374">&nbsp;</div>
+									</fieldset>
+									<fieldset class="actionbar_cell actionbar_cell_1152384">
+										<div class="actionbar_cell_content" id="actionbarelementlabel_1152384">
+											<legend class="actionbar_cell_label">Standort:</legend>
+										</div>
+										<div class="actionbar_cell_content" id="actionbarelement_1152384">
+											<br />
+											<select class="form_dropdown actionbarinputfixedwidth" id="input_1152384" name="searchSkill1005" tabindex="73046">
+												<option value="">Bitte w�hlen</option>
+												<option value="">-----------------------------------------</option>
+												<option id="input_1152384_option_38999839" value="38999839"
+												    title="Deutschland">Deutschland</option>
+												<option id="input_1152384_option_1000106" value="1000106" title="&gt; Berlin">&gt; Berlin</option>
+												<option id="input_1152384_option_1000112" value="1000112" title="&gt; Bielefeld">&gt; Bielefeld</option>
+												<option id="input_1152384_option_1000066" value="1000066" title="&gt; Bundesweit">&gt; Bundesweit</option>
+												<option id="input_1152384_option_1000031" value="1000031" title="&gt; Freiburg">&gt; Freiburg</option>
+												<option id="input_1152384_option_1005000" value="1005000" title="&gt; Hamburg">&gt; Hamburg</option>
+												<option id="input_1152384_option_1000110" value="1000110" title="&gt; Hannover">&gt; Hannover</option>
+												<option id="input_1152384_option_1000065" value="1000065" title="&gt; Leipzig">&gt; Leipzig</option>
+												<option id="input_1152384_option_1005008" value="1005008" title="&gt; M�nchen">&gt; M�nchen</option>
+												<option id="input_1152384_option_1005004" value="1005004" title="&gt; Neu Isenburg (Frankfurt)">&gt; Neu Isenburg (Frankfurt)</option>
+												<option id="input_1152384_option_1000107" value="1000107" title="&gt; Ratingen (D�sseldorf)">&gt; Ratingen (D�sseldorf)</option>
+												<option id="input_1152384_option_1000055" value="1000055" title="&gt; Stuttgart">&gt; Stuttgart</option>
+												<option id="input_1152384_option_1000132" value="1000132" title="&gt; Wiesbaden">&gt; Wiesbaden</option>
+												<option id="input_1152384_option_1000147" value="1000147" title="&gt; W�rthsee-Etterschlag (M�nchen)">&gt; W�rthsee-Etterschlag (M�nchen)</option>
+												<option id="input_1152384_option_1005002" value="1005002" title="&gt; W�rzburg">&gt; W�rzburg</option>
+												<option id="input_1152384_option_38999841" value="38999841" title="Rum�nien">Rum�nien</option>
+												<option id="input_1152384_option_38999837" value="38999837" title="&gt; Timisoara">&gt; Timisoara</option>
+												<option id="input_1152384_option_38999842" value="38999842" title="Spanien">Spanien</option>
+												<option id="input_1152384_option_38999844" value="38999844" title="&gt; Barcelona">&gt; Barcelona</option>
+												<option id="input_1152384_option_38999843" value="38999843" title="Schweiz">Schweiz</option>
+												<option id="input_1152384_option_38999845" value="38999845" title="&gt; St. Gallen">&gt; St. Gallen</option>
+												<option id="input_1152384_option_38999847" value="38999847" title="United States of America">United States of America</option>
+												<option id="input_1152384_option_38999846" value="38999846" title="&gt; Huntsville">&gt; Huntsville</option>
+											</select>
+										</div>
+										<div class="actionbar_cell_helptext" id="actionbarelementhelptext_1152384">&nbsp;</div>
+									</fieldset>
+									<fieldset class="actionbar_cell actionbar_cell_1152386">
+										<div class="actionbar_cell_content" id="actionbarelementlabel_1152386">
+											<legend class="actionbar_cell_label">T�tigkeitsbereich:</legend>
+										</div>
+										<div class="actionbar_cell_content" id="actionbarelement_1152386">
+											<br />
+											<select class="form_multiselect actionbarinputfixedwidth" id="input_1152386" name="searchSkill1006" multiple
+											    size="5" tabindex="73048">
+												<option id="option_38999856" value="38999856" title="Ausbildung / Duales Studium">Ausbildung / Duales Studium</option>
+												<option id="option_1006006" value="1006006" title="Consulting">Consulting</option>
+												<option id="option_1006008" value="1006008" title="Customer Management">Customer Management</option>
+												<option id="option_1000128" value="1000128" title="Editorial / Media Production">Editorial / Media Production</option>
+												<option id="option_1000146" value="1000146" title="Event Management">Event Management</option>
+												<option id="option_1000129" value="1000129" title="Finance / Controlling / Steuern">Finance / Controlling / Steuern</option>
+												<option id="option_1000130" value="1000130" title="Human Resources">Human Resources</option>
+												<option id="option_38999854" value="38999854" title="Internal Audit">Internal Audit</option>
+												<option id="option_38999848" value="38999848" title="IT">IT</option>
+												<option id="option_1006002" value="1006002" title="Learning &amp; Development">Learning &amp; Development</option>
+												<option id="option_1000131" value="1000131" title="Legal &amp; Compliance">Legal &amp; Compliance</option>
+												<option id="option_1006004" value="1006004" title="Marketing / Kommunikation">Marketing / Kommunikation</option>
+												<option id="option_38999855" value="38999855" title="Mergers &amp; Acquisitions">Mergers &amp; Acquisitions</option>
+												<option id="option_1006010" value="1006010" title="Produkt Management">Produkt Management</option>
+												<option id="option_1000127" value="1000127" title="Projekt &amp; Requirements Management">Projekt &amp; Requirements Management</option>
+												<option id="option_38999849" value="38999849" title="Publishing">Publishing</option>
+												<option id="option_38999850" value="38999850" title="Requirements Engineering">Requirements Engineering</option>
+												<option id="option_1000145" value="1000145" title="Sales">Sales</option>
+												<option id="option_38999851" value="38999851" title="Software Architecture">Software Architecture</option>
+												<option id="option_1006000" value="1006000" title="Software Development / Technology">Software Development / Technology</option>
+												<option id="option_1000134" value="1000134" title="Sonstiges">Sonstiges</option>
+												<option id="option_38999852" value="38999852" title="Traineeship / Volontariat">Traineeship / Volontariat</option>
+												<option id="option_38999853" value="38999853" title="UX / UI Design">UX / UI Design</option>
+												<option id="option_38999857" value="38999857" title="Werkstudium / Praktikum">Werkstudium / Praktikum</option>
+											</select>
+										</div>
+										<div class="actionbar_cell_helptext" id="actionbarelementhelptext_1152386">&nbsp;</div>
+									</fieldset>
+									<div class="actionbar_cell actionbar_cell_1152388">
+										<div class="actionbar_cell_content" id="actionbarbutton_1152388">
+											<button class="ButtonSearch" id="ButtonSearch_1152388" type="submit" name="Search" value="Suchen" tabindex="73049">Suchen</button>
+										</div>
+									</div>
+									<div class="actionbar_cell actionbar_cell_1152508">
+										<a class="actionbar_cell_advancedsearch" href="?Extended=Search" id="actionbaradvancedsearchlink_1152368" tabindex="73050">Erweiterte Suche</a>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+					<div class="actionbar_boundary_links">
+						<div class="actionbar">
+							<h2 class="actionbar_title" title="" id="actionshowblocktitle_1152458">Was m�chten Sie tun?</h2>
+							<div class="actionbar_content">
+								<div class="actionbar_cell_customdatablock" title="" id="customdatablock_1152461">
+									<a href="/Vacancies/InitiativeApplication/CheckLogin/9999" class="HSlinkActionBar" id="actionbarlink_1152461" tabindex="73051">
+										<i class="icon iNew" title="Initiativbewerbung erfassen" aria-hidden="true"></i>
+										<span class="visually-hidden">Initiativbewerbung erfassen</span>&nbsp;Initiativbewerbung erfassen</a>
+								</div>
+								<div class="actionbar_cell_customdatablock" title="" id="customdatablock_1152467">
+									<i class="icon ispacer16"></i>&nbsp;
+									<br>M�chten Sie regelm�ssig �ber aktuelle Stellenangebote informiert werden?</div>
+								<div class="actionbar_cell_customdatablock"
+								    title="" id="customdatablock_1152468">
+									<a href="/Vacancies/Register/CheckLogin/9999" class="HSlinkActionBar" id="actionbarlink_1152468" tabindex="73054">
+										<i class="icon iAction" title="Automatische Benachrichtigung" aria-hidden="true"></i>
+										<span class="visually-hidden">Automatische Benachrichtigung</span>&nbsp;Stellen-Abonnement einrichten</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container_content">
+				<script type="text/javascript">
+					/*
+					 * Adds controls on found element with id controlID
+					 * and initializes default state
+					 * important: the given element MUST HAVE a table inside with at least one row
+					 */
+					function addControls(controlID, contentID, infoID, state, jsTabindex) {
+						if (!controlID || !state) {
+							return;
+						}
+						var controlelement = $("#" + controlID); // element to be extended with icons
+						var contentelement = $("#" + contentID); // element to be hideable
+						var infoelement = $("#" + infoID); // element which is hidden vice-versa the contentelement
+						if (!controlelement || !contentelement)
+							return;
+						//create control-icons
+						var tmp = "";
+						var tmp = '<a href="#" onclick="setState(\'' + controlID + '\', \'' + contentID + '\', \'' + infoID +
+							'\', \'Open\', \'false\'); return false;" id="setStateLinkOpen' + controlID +
+							'" class="exteded-search-arrow" role="link" ' + jsTabindex + '><i class="icon ifolding_open"></i></a>' +
+							'<a href="#" onclick="setState(\'' + controlID + '\', \'' + contentID + '\', \'' + infoID +
+							'\', \'Closed\', \'false\'); return false;" id="setStateLinkClose' + controlID +
+							'" class="exteded-search-arrow" role="link" ' + jsTabindex + '><i class="icon ifolding_close"></i></a>';
+						// add new controls to title-html
+						controlelement.prepend(tmp);
+						// set state
+						setState(controlID, contentID, infoID, state, "true");
+					}
+
+					function _showLink(control) {
+						if (!control)
+							return;
+						$(control).show();
+					}
+
+					function _hideLink(control) {
+						if (!control)
+							return;
+						$(control).hide();
+					}
+
+					function _showBlock(contentID, infoID) {
+						if (!contentID)
+							return;
+						contentcontrol = $("#" + contentID);
+						contentcontrol.show();
+						infocontrol = $("#" + infoID);
+						if (infocontrol != null)
+							infocontrol.hide();
+					}
+
+					function _hideBlock(contentID, infoID) {
+						if (!contentID)
+							return;
+						contentcontrol = $("#" + contentID);
+						contentcontrol.hide();
+						infocontrol = $("#" + infoID);
+						if (infocontrol != null)
+							infocontrol.show();
+					}
+					/*
+					 * control the visibility of block/title and buttons
+					 */
+					function setState(controlID, contentID, infoID, state, respectCookie) {
+						if (!controlID || !state) {
+							return;
+						}
+						if (respectCookie == "true") {
+							var cVar = $.cookie(controlID);
+							if (cVar && cVar.length > 0) {
+								state = cVar;
+							}
+						}
+						var openLink = $("#setStateLinkOpen" + controlID);
+						var closeLink = $("#setStateLinkClose" + controlID);
+						switch (state) {
+							case "Open":
+								if (respectCookie != "true") {
+									$.cookie(controlID, 'Open', {
+										expires: 30,
+										path: '/',
+										secure: true
+									});
+								}
+								_showBlock(contentID, infoID);
+								// Arrange icons
+								_hideLink(openLink);
+								_showLink(closeLink);
+								break;
+							case "Closed":
+								if (respectCookie != "true") {
+									$.cookie(controlID, 'Closed', {
+										expires: 30,
+										path: '/',
+										secure: true
+									});
+								}
+								_hideBlock(contentID, infoID);
+								// Arrange icons
+								_showLink(openLink);
+								_hideLink(closeLink);
+								break;
+							default:
+								break;
+						}
+					}
+
+					/*
+					 *
+					 * VCardSwitcher
+					 *
+					 */
+					function addVCardSwitcher(switcherID, tableID, cardID, sortID, multiactionID, state, jsTabindex) {
+						if (!switcherID || !tableID || !cardID || !sortID || !multiactionID) {
+							return;
+						}
+						var switcherelement = $("#" + switcherID);
+						var tableelement = $("#" + tableID);
+						var cardelement = $("#" + cardID);
+						if (!switcherelement || !tableelement || !cardelement) {
+							return;
+						}
+						var vcardswitcher = '<span class="switch_table_on" id="switch_table_on_' + switcherID + '" role="link" ' +
+							jsTabindex + '><i class="icon iswitch_table_on switch_table_on"></i></span>' +
+							'<span class="switch_table_off" id="switch_table_off_' + switcherID + '" role="link" ' + jsTabindex +
+							'><i class="icon iswitch_table_off switch_table_off" title="Table-View" onclick="setVCardState(\'' + switcherID +
+							'\', \'' + tableID + '\', \'' + cardID + '\', \'' + sortID + '\', \'' + multiactionID +
+							'\', \'Table\', \'false\');"></i></span>' +
+							'<span class="switch_card_on" id="switch_card_on_' + switcherID + '" role="link" ' + jsTabindex +
+							'><i class="icon iswitch_card_on switch_card_on"></i></span>' +
+							'<span class="switch_card_off" id="switch_card_off_' + switcherID + '" role="link" ' + jsTabindex +
+							'><i class="icon iswitch_card_off switch_card_off" title="Card-View" onclick="setVCardState(\'' + switcherID +
+							'\', \'' + tableID + '\', \'' + cardID + '\', \'' + sortID + '\', \'' + multiactionID +
+							'\', \'Card\', \'false\');"></i></span>';
+						// add switcher-buttons/images to switcher-html
+						switcherelement.prepend(vcardswitcher);
+						// set state
+						setVCardState(switcherID, tableID, cardID, sortID, multiactionID, state, "true");
+					}
+
+					function setVCardState(switcherID, tableID, cardID, sortID, multiactionID, state, respectCookie) {
+						if (!switcherID || !state) {
+							return;
+						}
+						if (respectCookie == "true") {
+							var cVar = $.cookie(switcherID);
+							if (cVar && cVar.length > 0) {
+								state = cVar;
+							}
+						}
+						switch (state) {
+							case "Table":
+								if (respectCookie != "true") {
+									$.cookie(switcherID, 'Table', {
+										expires: 30,
+										path: '/',
+										secure: true
+									});
+								}
+								$("#" + cardID + ", #switch_card_on_" + switcherID + ", #switch_table_off_" + switcherID + ", #" + sortID).hide();
+								$("#" + tableID + ", #switch_card_off_" + switcherID + ", #switch_table_on_" + switcherID).show();
+								$("img.imageborder").trigger("scroll"); // Trigger scroll to display images that might not have been displayed before
+								// Set global flag so that switchting from table to card view or vice versa is known by the functions below
+								tableVCardSwitching = 1;
+								// Speichere Zustand ob 'Alle' markiert wurden
+								var allActivated = 0;
+								var count = $('#multiaction_counter_value_' + multiactionID).attr('name');
+								if ($('#multiaction_allactivated_' + multiactionID).length > 0) {
+									var allActivated = $('#multiaction_allactivated_' + multiactionID).attr('value');
+								}
+								// Multiaction-Checkbox's der Cards auf Table-Checkbox's mappen und die der Cards unchecken
+								$("#" + cardID + " div.card_item input.card_multiaction:checked").each(function () {
+									var valueAsID = $(this).attr("value");
+									$(this).parent().parent().trigger('click');
+									$("#" + tableID + " tr.table_contentrow1 input.table_multiaction[value='" + valueAsID + "'], #" + tableID +
+										" tr.table_contentrow2 input.table_multiaction[value='" + valueAsID + "']").parent().parent().trigger(
+										'click');
+								});
+								// Stelle falls noetig den Zustand 'Alle markiert' wieder her
+								if (allActivated == 1) {
+									$('#multiaction_allactivated_' + multiactionID).attr('value', '1');
+									$('#multiaction_counter_value_' + multiactionID).html(count);
+								}
+								// Reset global flag
+								tableVCardSwitching = 0;
+								break;
+							case "Card":
+								if (respectCookie != "true") {
+									$.cookie(switcherID, 'Card', {
+										expires: 30,
+										path: '/',
+										secure: true
+									});
+								}
+								$("#" + tableID + ", #switch_table_on_" + switcherID + ", #switch_card_off_" + switcherID).hide();
+								$("#" + cardID + ", #switch_table_off_" + switcherID + ", #switch_card_on_" + switcherID + ", #" + sortID).show();
+								// Trigger scroll to display images that might not have been displayed before
+								$("#" + cardID).find("img.imageborder").trigger("scroll");
+								// Set the height of each VCard to the height of the heighest VCard
+								/*$("#" + cardID).find("div.card_item").each(function() {
+									$(this).height(Math.max.apply(null, $("div.card_item").map(function() {
+										return $(this).height();
+									}).get()));
+								});*/
+								// Set global flag so that switchting from table to card view or vice versa is known by the functions below
+								tableVCardSwitching = 1;
+								// Speichere Zustand ob 'Alle' markiert wurden
+								var allActivated = 0;
+								var count = $('#multiaction_counter_value_' + multiactionID).attr('name');
+								if ($('#multiaction_allactivated_' + multiactionID).length > 0) {
+									var allActivated = $('#multiaction_allactivated_' + multiactionID).attr('value');
+								}
+								// Multiaction-Checkbox's der Table auf Card-Checkbox's mappen und die der Table unchecken
+								$("#" + tableID + " tr.table_contentrow1 input.table_multiaction:checked, #" + tableID +
+									" tr.table_contentrow2 input.table_multiaction:checked").each(function () {
+									var valueAsID = $(this).attr("value");
+									$(this).parent().parent().trigger('click');
+									$("#" + cardID).find("input.card_multiaction[value='" + valueAsID + "']").parent().parent().trigger('click');
+								});
+								// Stelle falls noetig den Zustand 'Alle markiert' wieder her
+								if (allActivated == 1) {
+									$('#multiaction_allactivated_' + multiactionID).attr('value', '1');
+									$('#multiaction_counter_value_' + multiactionID).html(count);
+								}
+								// Reset global flag
+								tableVCardSwitching = 0;
+								break;
+							default:
+								break;
+						}
+						$(window).trigger('vCardSwitched');
+					}
+				</script>
+				<div class="showblock_showtableaslist" id="connectortable_1" data-one-item-chunk="10">
+					<div class="tableaslist_paging_top" id="tablenavigation_boundary_top">
+						<span class="tableaslist_paging_top" id="tablenavigation_1152481_top">&nbsp;
+							<span class="pagination-from">1</span>&nbsp;bis&nbsp;
+							<span class="pagination-to">10</span>&nbsp;von&nbsp;
+							<span class="pagination-total-all">65</span>
+							&nbsp;
+							<a href="?tc1152481=p2&amp;_search_token1152481=1500707737#connectortable_1152481" class="HSTableNavigation"
+							    id="tablenav_default_nextlink_1152481" tabindex="73055">
+								<i class="icon itnav_next" title="n�chste"></i>
+							</a>
+							<a href="?tc1152481=p7&amp;_search_token1152481=1500707737#connectortable_1152481" class="HSTableNavigation" id="tablenav_default_lastlink_1152481"
+							    tabindex="73056">
+								<i class="icon itnav_last" title="letzte"></i>
+							</a>
+						</span>
+					</div>
+					<table class="tableaslist">
+						<caption class="visually-hidden"></caption>
+						<tr class="tableaslist_contentrow1">
+							<td class="tableaslist_cell" id="tablecell_4">
+								<div class="tableaslist_cell">
+									<span class="tableaslist_text tableaslist_element_1152484"></span>
+									<span class="tableaslist_text tableaslist_element_1152485"></span>
+									<span class="tableaslist_text tableaslist_element_1152486">&nbsp;&nbsp;Haufe-Lexware</span>
+									<span class="tableaslist_text tableaslist_element_1152487">&nbsp;|&nbsp;Online seit: 16.11.2017
+										<br /> </span>
+									<span class="tableaslist_subtitle tableaslist_element_1152488">
+										<!-- <br /> -->
+										<a href="/Vacancies/3291/Description/1" class="HSTableLinkSubTitle" id="link_1152488_1">Duales Studium Wirtschaftsinformatik oder Angewandte Informatik</a>
+									</span>
+									<span class="tableaslist_text tableaslist_element_1152489"> </span>
+									<span class="tableaslist_subtitle tableaslist_element_1152491">&nbsp;|&nbsp;Art: Vollzeit</span>
+									<span class="tableaslist_subtitle tableaslist_element_1152492">&nbsp;|&nbsp;Befristung: befristet</span>
+									<span class="tableaslist_subtitle tableaslist_element_1152496">&nbsp;|&nbsp;Freiburg</span>
+									<span class="tableaslist_subtitle tableaslist_element_1152497">&nbsp;|&nbsp;Ausbildung / Duales Studium, Software Development / Technology</span>
+									<br /> </div>
+							</td>
+						</tr>
+						<tr class="tableaslist_contentrow2">
+							<td class="tableaslist_cell" id="tablecell_5">
+								<div class="tableaslist_cell">
+									<span class="tableaslist_text tableaslist_element_1152484"></span>
+									<span class="tableaslist_text tableaslist_element_1152485"></span>
+									<span class="tableaslist_text tableaslist_element_1152486">&nbsp;&nbsp;Haufe Akademie</span>
+									<span class="tableaslist_text tableaslist_element_1152487">&nbsp;|&nbsp;Online seit: 16.11.2017
+										<br /> </span>
+									<span class="tableaslist_subtitle tableaslist_element_1152488">
+										<!-- <br /> -->
+										<a href="/Vacancies/3247/Description/1" class="HSTableLinkSubTitle" id="link_1152488_2">Director Marketing Strategy &amp; Concept (m/w)</a>
+									</span>
+									<span class="tableaslist_text tableaslist_element_1152489"> </span>
+									<span class="tableaslist_subtitle tableaslist_element_1152491">&nbsp;|&nbsp;Art: Vollzeit</span>
+									<span class="tableaslist_subtitle tableaslist_element_1152492">&nbsp;|&nbsp;Befristung: unbefristet</span>
+									<span class="tableaslist_subtitle tableaslist_element_1152496">&nbsp;|&nbsp;Freiburg</span>
+									<span class="tableaslist_subtitle tableaslist_element_1152497">&nbsp;|&nbsp;Marketing / Kommunikation</span>
+									<br /> </div>
+							</td>
+						</tr>
+						<tr class="tableaslist_contentrow1">
+							<td class="tableaslist_cell" id="tablecell_6">
+								<div class="tableaslist_cell">
+									<span class="tableaslist_text tableaslist_element_1152484"></span>
+									<span class="tableaslist_text tableaslist_element_1152485"></span>
+									<span class="tableaslist_text tableaslist_element_1152486">&nbsp;&nbsp;Haufe umantis</span>
+									<span class="tableaslist_text tableaslist_element_1152487">&nbsp;|&nbsp;Online seit: 14.11.2017
+										<br /> </span>
+									<span class="tableaslist_subtitle tableaslist_element_1152488">
+										<!-- <br /> -->
+										<a href="/Vacancies/3111/Description/1" class="HSTableLinkSubTitle" id="link_1152488_3">Director of Engineering </a>
+									</span>
+									<span class="tableaslist_text tableaslist_element_1152489"> </span>
+									<span class="tableaslist_subtitle tableaslist_element_1152491"></span>
+									<span class="tableaslist_subtitle tableaslist_element_1152492"></span>
+									<span class="tableaslist_subtitle tableaslist_element_1152496">&nbsp;|&nbsp;Barcelona</span>
+									<span class="tableaslist_subtitle tableaslist_element_1152497">&nbsp;|&nbsp;Software Development / Technology</span>
+									<br /> </div>
+							</td>
+						</tr>
+						<tr class="tableaslist_contentrow2">
+							<td class="tableaslist_cell" id="tablecell_7">
+								<div class="tableaslist_cell">
+									<span class="tableaslist_text tableaslist_element_1152484"></span>
+									<span class="tableaslist_text tableaslist_element_1152485"></span>
+									<span class="tableaslist_text tableaslist_element_1152486">&nbsp;&nbsp;Haufe umantis</span>
+									<span class="tableaslist_text tableaslist_element_1152487">&nbsp;|&nbsp;Online seit: 14.11.2017
+										<br /> </span>
+									<span class="tableaslist_subtitle tableaslist_element_1152488">
+										<!-- <br /> -->
+										<a href="/Vacancies/3290/Description/1" class="HSTableLinkSubTitle" id="link_1152488_4">IT Service Desk &amp; 2nd Level Product Support Specialist</a>
+									</span>
+									<span class="tableaslist_text tableaslist_element_1152489"> </span>
+									<span class="tableaslist_subtitle tableaslist_element_1152491"></span>
+									<span class="tableaslist_subtitle tableaslist_element_1152492"></span>
+									<span class="tableaslist_subtitle tableaslist_element_1152496">&nbsp;|&nbsp;St. Gallen</span>
+									<span class="tableaslist_subtitle tableaslist_element_1152497">&nbsp;|&nbsp;Customer Management</span>
+									<br /> </div>
+							</td>
+						</tr>
+						<tr class="tableaslist_contentrow1">
+							<td class="tableaslist_cell" id="tablecell_8">
+								<div class="tableaslist_cell">
+									<span class="tableaslist_text tableaslist_element_1152484"></span>
+									<span class="tableaslist_text tableaslist_element_1152485"></span>
+									<span class="tableaslist_text tableaslist_element_1152486">&nbsp;&nbsp;Haufe-Lexware</span>
+									<span class="tableaslist_text tableaslist_element_1152487">&nbsp;|&nbsp;Online seit: 10.11.2017
+										<br /> </span>
+									<span class="tableaslist_subtitle tableaslist_element_1152488">
+										<!-- <br /> -->
+										<a href="/Vacancies/2644/Description/1" class="HSTableLinkSubTitle" id="link_1152488_5">Senior Frontend-Entwickler / Senior Frontend Developer (m/w)</a>
+									</span>
+									<span class="tableaslist_text tableaslist_element_1152489"> </span>
+									<span class="tableaslist_subtitle tableaslist_element_1152491">&nbsp;|&nbsp;Art: Vollzeit</span>
+									<span class="tableaslist_subtitle tableaslist_element_1152492">&nbsp;|&nbsp;Befristung: unbefristet</span>
+									<span class="tableaslist_subtitle tableaslist_element_1152496">&nbsp;|&nbsp;Freiburg</span>
+									<span class="tableaslist_subtitle tableaslist_element_1152497">&nbsp;|&nbsp;Software Development / Technology</span>
+									<br /> </div>
+							</td>
+						</tr>
+						<tr class="tableaslist_contentrow2">
+							<td class="tableaslist_cell" id="tablecell_9">
+								<div class="tableaslist_cell">
+									<span class="tableaslist_text tableaslist_element_1152484"></span>
+									<span class="tableaslist_text tableaslist_element_1152485"></span>
+									<span class="tableaslist_text tableaslist_element_1152486">&nbsp;&nbsp;Haufe Akademie</span>
+									<span class="tableaslist_text tableaslist_element_1152487">&nbsp;|&nbsp;Online seit: 09.11.2017
+										<br /> </span>
+									<span class="tableaslist_subtitle tableaslist_element_1152488">
+										<!-- <br /> -->
+										<a href="/Vacancies/3281/Description/1" class="HSTableLinkSubTitle" id="link_1152488_6">(Junior-) Berater Inhouse-Training (m/w)</a>
+									</span>
+									<span class="tableaslist_text tableaslist_element_1152489"> </span>
+									<span class="tableaslist_subtitle tableaslist_element_1152491">&nbsp;|&nbsp;Art: Vollzeit</span>
+									<span class="tableaslist_subtitle tableaslist_element_1152492">&nbsp;|&nbsp;Befristung: befristet</span>
+									<span class="tableaslist_subtitle tableaslist_element_1152496">&nbsp;|&nbsp;Freiburg</span>
+									<span class="tableaslist_subtitle tableaslist_element_1152497">&nbsp;|&nbsp;Learning &amp; Development</span>
+									<br /> </div>
+							</td>
+						</tr>
+						<tr class="tableaslist_contentrow1">
+							<td class="tableaslist_cell" id="tablecell_10">
+								<div class="tableaslist_cell">
+									<span class="tableaslist_text tableaslist_element_1152484"></span>
+									<span class="tableaslist_text tableaslist_element_1152485"></span>
+									<span class="tableaslist_text tableaslist_element_1152486">&nbsp;&nbsp;Haufe-Lexware Services</span>
+									<span class="tableaslist_text tableaslist_element_1152487">&nbsp;|&nbsp;Online seit: 07.11.2017
+										<br /> </span>
+									<span class="tableaslist_subtitle tableaslist_element_1152488">
+										<!-- <br /> -->
+										<a href="/Vacancies/2850/Description/1" class="HSTableLinkSubTitle" id="link_1152488_7">Customer Support / IT-Support 2nd-Level (m/w) HR Business-Software</a>
+									</span>
+									<span class="tableaslist_text tableaslist_element_1152489"> </span>
+									<span class="tableaslist_subtitle tableaslist_element_1152491">&nbsp;|&nbsp;Art: Vollzeit</span>
+									<span class="tableaslist_subtitle tableaslist_element_1152492">&nbsp;|&nbsp;Befristung: unbefristet</span>
+									<span class="tableaslist_subtitle tableaslist_element_1152496">&nbsp;|&nbsp;Freiburg</span>
+									<span class="tableaslist_subtitle tableaslist_element_1152497">&nbsp;|&nbsp;Customer Management</span>
+									<br /> </div>
+							</td>
+						</tr>
+						<tr class="tableaslist_contentrow2">
+							<td class="tableaslist_cell" id="tablecell_11">
+								<div class="tableaslist_cell">
+									<span class="tableaslist_text tableaslist_element_1152484"></span>
+									<span class="tableaslist_text tableaslist_element_1152485"></span>
+									<span class="tableaslist_text tableaslist_element_1152486">&nbsp;&nbsp;Haufe-Lexware Services</span>
+									<span class="tableaslist_text tableaslist_element_1152487">&nbsp;|&nbsp;Online seit: 07.11.2017
+										<br /> </span>
+									<span class="tableaslist_subtitle tableaslist_element_1152488">
+										<!-- <br /> -->
+										<a href="/Vacancies/3198/Description/1" class="HSTableLinkSubTitle" id="link_1152488_8">Specialist Customer Analytics/Data Science (m/w)</a>
+									</span>
+									<span class="tableaslist_text tableaslist_element_1152489"> </span>
+									<span class="tableaslist_subtitle tableaslist_element_1152491">&nbsp;|&nbsp;Art: Vollzeit</span>
+									<span class="tableaslist_subtitle tableaslist_element_1152492">&nbsp;|&nbsp;Befristung: unbefristet</span>
+									<span class="tableaslist_subtitle tableaslist_element_1152496">&nbsp;|&nbsp;Freiburg</span>
+									<span class="tableaslist_subtitle tableaslist_element_1152497">&nbsp;|&nbsp;Customer Management</span>
+									<br /> </div>
+							</td>
+						</tr>
+						<tr class="tableaslist_contentrow1">
+							<td class="tableaslist_cell" id="tablecell_12">
+								<div class="tableaslist_cell">
+									<span class="tableaslist_text tableaslist_element_1152484"></span>
+									<span class="tableaslist_text tableaslist_element_1152485"></span>
+									<span class="tableaslist_text tableaslist_element_1152486">&nbsp;&nbsp;Haufe-Lexware</span>
+									<span class="tableaslist_text tableaslist_element_1152487">&nbsp;|&nbsp;Online seit: 07.11.2017
+										<br /> </span>
+									<span class="tableaslist_subtitle tableaslist_element_1152488">
+										<!-- <br /> -->
+										<a href="/Vacancies/3170/Description/1" class="HSTableLinkSubTitle" id="link_1152488_9">Softwaredeveloper (m/w) Processmodelling</a>
+									</span>
+									<span class="tableaslist_text tableaslist_element_1152489"> </span>
+									<span class="tableaslist_subtitle tableaslist_element_1152491">&nbsp;|&nbsp;Art: Vollzeit</span>
+									<span class="tableaslist_subtitle tableaslist_element_1152492">&nbsp;|&nbsp;Befristung: unbefristet</span>
+									<span class="tableaslist_subtitle tableaslist_element_1152496">&nbsp;|&nbsp;Freiburg</span>
+									<span class="tableaslist_subtitle tableaslist_element_1152497">&nbsp;|&nbsp;Software Development / Technology</span>
+									<br /> </div>
+							</td>
+						</tr>
+						<tr class="tableaslist_contentrow2">
+							<td class="tableaslist_cell" id="tablecell_13">
+								<div class="tableaslist_cell">
+									<span class="tableaslist_text tableaslist_element_1152484"></span>
+									<span class="tableaslist_text tableaslist_element_1152485"></span>
+									<span class="tableaslist_text tableaslist_element_1152486">&nbsp;&nbsp;Haufe-Lexware</span>
+									<span class="tableaslist_text tableaslist_element_1152487">&nbsp;|&nbsp;Online seit: 07.11.2017
+										<br /> </span>
+									<span class="tableaslist_subtitle tableaslist_element_1152488">
+										<!-- <br /> -->
+										<a href="/Vacancies/3174/Description/1" class="HSTableLinkSubTitle" id="link_1152488_10">DevOps Engineer (m/w)</a>
+									</span>
+									<span class="tableaslist_text tableaslist_element_1152489"> </span>
+									<span class="tableaslist_subtitle tableaslist_element_1152491">&nbsp;|&nbsp;Art: Vollzeit</span>
+									<span class="tableaslist_subtitle tableaslist_element_1152492">&nbsp;|&nbsp;Befristung: unbefristet</span>
+									<span class="tableaslist_subtitle tableaslist_element_1152496">&nbsp;|&nbsp;Freiburg</span>
+									<span class="tableaslist_subtitle tableaslist_element_1152497">&nbsp;|&nbsp;Software Development / Technology</span>
+									<br /> </div>
+							</td>
+						</tr>
+					</table>
+					<div class="tableaslist_paging_bottom" id="tablenavigation_boundary_bottom">
+						<span class="tableaslist_paging_bottom" id="tablenavigation_1152481_bottom">&nbsp;
+							<span class="pagination-from">1</span>&nbsp;bis&nbsp;
+							<span class="pagination-to">10</span>&nbsp;von&nbsp;
+							<span class="pagination-total-all">65</span>
+							&nbsp;
+							<a href="?tc1152481=p2&amp;_search_token1152481=1500707737#connectortable_1152481" class="HSTableNavigation"
+							    id="tablenav_default_nextlink_1152481" tabindex="73057">
+								<i class="icon itnav_next" title="n�chste"></i>
+							</a>
+							<a href="?tc1152481=p7&amp;_search_token1152481=1500707737#connectortable_1152481" class="HSTableNavigation" id="tablenav_default_lastlink_1152481"
+							    tabindex="73058">
+								<i class="icon itnav_last" title="letzte"></i>
+							</a>
+						</span>
+					</div>
+				</div>
+			</div>
+			<div style="clear: both;"></div>
+		</div>
+		<div id="footer" title="servertime: 0.59 sec | recruitingapp stable | 22.1.5.2 (stable_live) | 6b27aeb (08.11.2017 10:32 UTC)  | started: 14.11.2017 16:31 UTC">
+			<div class="breathcrumb"> </div>
+			<div class="copy">
+				<a href="http://www.umantis.com" target="_blank" title="Talent Management">umantis - Talent Management</a> by Haufe
+				<span id="back-top">
+					<a href="#top"></a>
+				</span>
+			</div>
+		</div>
+	</div>
+	<div id="offline-message" data-ng-class="{show:offlineMessageActive===true}">
+		<div class="offline" data-ng-show="!online_status_string || !hasInternetConnection">
+			<p>
+				<b>Keine Internetverbindung!</b>
+			</p>
+			<p class="small">Bitte stellen Sie eine Verbindung mit dem Internet her, um weiter zu arbeiten.</p>
+			<a class="action-button" onclick="javascript:$('#offline-message').removeClass('show');" href="javascript:void(0);">schliessen</a>
+		</div>
+		<div class="sessionTimeout" data-ng-hide="(!online_status_string || session.countDown.active !== true)">
+			<p>
+				<span data-ng-if="session.isLoggedIn">
+					<b>Automatische Abmeldung in:</b>
+				</span>
+				<span data-ng-if="!session.isLoggedIn">
+					<b>Ihre Sitzung ist abgelaufen!</b>
+					<span class="small">Die aktuelle Sitzung wurde aufgrund von Inaktivit�t beendet. Sie k�nnen dieses Formular jetzt nicht mehr speichern.
+						Speichern Sie Ihre �nderungen vor dem Verlassen der Seite gegebenenfalls lokal ab, um Datenverlust zu vermeiden.</span>
+				</span>
+			</p>
+			<div id="clockdiv" data-ng-hide="!session.isLoggedIn">
+				<div>
+					<span>{{session.countDown.hours}}</span>
+					<div class="smalltext">Stunden</div>
+				</div>
+				<div>
+					<span>{{session.countDown.minutes}}</span>
+					<div class="smalltext">Minuten</div>
+				</div>
+				<div>
+					<span>{{session.countDown.seconds}}</span>
+					<div class="smalltext">Sekunden</div>
+				</div>
+			</div>
+			<p data-ng-if="session.isLoggedIn" class="small">Ihre Sitzung endet nach dieser Zeit und Sie werden automatisch vom System abgemeldet. Nicht gespeicherte �nderungen gehen
+				gegebenenfalls verloren. Klicken Sie auf "Sitzungsdauer verl�ngern", um die automatische Abmeldung abzubrechen und die
+				Sitzungsdauer zu verl�ngern.</p>
+			<a class="action-button" data-ng-click="reInitializeClock()" href="javascript:void(0);" data-ng-hide="!session.isLoggedIn">Sitzungsdauer verl�ngern</a>
+			<a class="action-button" onclick="javascript:$('#offline-message').removeClass('show');" href="javascript:void(0);" data-ng-show="!session.isLoggedIn">Okay</a>
+		</div>
+	</div>
+	<link rel="stylesheet" href="/assets/vendors/redactor/redactor.css" />
+	<!-- econda helper v1.3 -->
+
+	<script type="text/javascript">
+		//<![CDATA[
+
+		(function (module) {
+
+
+
+			if (!module) window.emosHelper = module = {};
+
+			var content = '',
+
+				pageid = '';
+
+
+
+			function convert(value) {
+
+				return decodeURIComponent(value).replace(/^[a-z]/, function (match) {
+
+					return match.toUpperCase();
+
+				});
+
+			};
+
+
+
+			module.content = function (prefix) {
+
+				var path = location.pathname
+
+					.replace(/(index)?[.;][a-zA-Z0-9=._]+/g, '')
+
+					.replace(/<\/?[^>]+>/gi, '')
+
+					.replace(/([^\/]+)|(\/+)/g, function (match, noSlash, slash) {
+
+						return slash ? '/' : convert(noSlash);
+
+					}).replace(/^\/|\/$/g, '');
+
+				if (prefix && !/\/$/.test(prefix)) prefix += '/';
+
+				return content = path && path !== '/' ? (prefix || '') + path : 'Start';
+
+			};
+
+
+
+			module.siteid = function () {
+
+				return siteid = location.hostname.replace('www.', '');
+
+			};
+
+
+
+			module.pageid = function () {
+
+				return pageid = (content || module.content()).toLowerCase().replace(/\//g, '');
+
+			};
+
+
+
+		})(window.emosHelper);
+
+		//]]>
+	</script>
+
+	<script type="text/javascript">
+		//<![CDATA[
+
+		window.emosTrackVersion = 2;
+
+		//]]>
+	</script>
+
+	<script type="text/javascript" src="https://cdn.haufe.com/econda/emos2.js" "></script>
+
+<script type="text/javascript ">
+
+//<![CDATA[
+
+    var emospro = {};
+
+    emospro.content = emosHelper.content("recruitingapp "); /* path prefix, optional.  start, shop... */
+
+    emospro.siteid = 'recruitingapp-2388.umantis.com';
+
+                                    
+
+    emospro.langid = 'Haufe Gruppe';
+
+     emospro.countryid = 'Presse/Corporate';
+
+    emospro.businessunit = 'HR_OD';
+
+
+
+    emospro.pageId = emosHelper.pageid(); /* econda Click Monitor */
+
+    if(typeof(window.emosPropertiesEvent) == 'function') {
+
+        window.emosPropertiesEvent(emospro);
+
+    }
+
+//]]>
+
+</script>		<script type="text/javascript " src="/assets/vendors/angular/angular.min.js "></script>
+		<script type="text/javascript " src="/css/js/footer.min.js?21.2.4.0 "></script>		<script type="text/javascript
+	    " src="/css/js/jquery/ui/i18n/jquery.ui.datepicker-ger.js "></script>
+		<script type="text/javascript " src="/css/js/jquery/jquery.ba-postmessage.js "></script>		<script type="text/javascript
+	    " src="/css/js/jquery/jquery.stickyPanel.min.js "></script>		<script type="text/javascript ">
+			var globalUmantisParams = {
+				PageName: "Overview ",
+				CWCActive: " ",
+				BrowserLanguage: " ",
+				JSMultiSelect: "1 ",
+				JSRadiosAndChecks: "1 ",
+				JSActionbarToggle: "1 ",
+				CatchEdit: " ",
+				CrossDomainMessagingPossible: "1 ",
+				SelfID: " ",
+				SessionDurationMS: "5400000 ",
+				ServerLoadTime: "0.589014 ",
+				PingB4Submit: "true ",
+				SolutionLanguage: "de ",
+				UserTimeZoneInactive: "true "
+			};
+		</script>
+		<script type="text/javascript " src="/css/newtemplates2012/umantis2012.js?21.2.4.0 " id="umantis2012js "></script>
+	</body>
+</html>

@@ -1,0 +1,16 @@
+{
+    "enumerationValues": [
+        {
+            "value": "Freiburg"
+        }, 
+        {
+            "value": "Timisoara"
+        }
+    ], 
+    "name": "JobLocation", 
+    "checksum": "checksum", 
+    "version": "$LATEST", 
+    "lastUpdatedDate": 0, 
+    "createdDate": 0, 
+    "description": "Cities to choose from"
+}

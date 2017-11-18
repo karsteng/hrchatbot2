@@ -1,0 +1,40 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+
+Resources:
+
+#
+# Lambda Functions
+#
+
+  Search:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: searchJobBot.handler
+      Runtime: python3.6
+      CodeUri: ../LambdaFunctions/Bot
+
+  # FacebookWebhook:
+  #   Type: AWS::Serverless::Function
+  #   Properties:
+  #     Handler: facebook.handler
+  #     Runtime: python3.6
+  #     CodeUri: "https://s3.amazonaws.com/hrchatbot/Facebook.zip"
+  #     Timeout: 60
+  #     Environment:
+  #       Variables:
+  #         FACEBOOK_PAGE_ID: '123456789'
+  #         FACEBOOK_ACCESS_TOKEN: '1q2w3e4r5t6y7u8i9'
+  #     Events:
+  #       GetResource:
+  #         Type: Api
+  #         Properties:
+  #           Path: /facebook
+  #           Method: get
+  #       PostResource:
+  #         Type: Api
+  #         Properties:
+  #           Path: /facebook
+  #           Method: post
+
+
