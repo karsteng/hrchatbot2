@@ -217,6 +217,12 @@ def startBot(intent_request):
         {'contentType': 'PlainText',
          'content': 'How can I help?'})
 
+def goodbye(intent_request):
+    return close(
+        intent_request['sessionAttributes'],
+        'Fulfilled',
+        {'contentType': 'PlainText',
+         'content': 'Happy to help. Goodbye!'})
 
 """ --- Intents --- """
 def dispatch(intent_request):
@@ -240,6 +246,8 @@ def dispatch(intent_request):
         return answer_faq(intent_request, faq.FaqType.JOB_FULL_OR_PARTTIME)
     elif intent_name == 'StartBot':
         return startBot(intent_request)
+    elif intent_name == 'GoodBye':
+        return goodbye(intent_request)
 
     raise Exception('Intent with name ' + intent_name + ' not supported')
 
