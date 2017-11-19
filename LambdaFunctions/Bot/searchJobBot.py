@@ -207,7 +207,16 @@ def ask_job_still_vacant(intent_request):
         "Fulfilled",
         {'contentType': 'PlainText', 
          'content': get_content(faq.FaqType.JOB_STILL_VACANT)})
-    
+ 
+def startBot(intent_request):
+     source = intent_request['invocationSource']
+	
+     output_session_attributes = intent_request['sessionAttributes'] if intent_request['sessionAttributes'] is not None else {}
+     
+     return close(intent_request['sessionAttributes'],
+     'Fulfilled',
+     {'contentType': 'PlainText',
+     'content': 'How can I help?'}) 
     
 """ --- Intents --- """
 def dispatch(intent_request):
@@ -227,6 +236,8 @@ def dispatch(intent_request):
         return findAllJobs(intent_request)
     elif intent_name == 'AskStelleNochVakant':
         return ask_job_still_vacant(intent_request)
+	elif intent_name == 'StartBot':
+        return startBot(intent_request)
         
     raise Exception('Intent with name ' + intent_name + ' not supported')
 
