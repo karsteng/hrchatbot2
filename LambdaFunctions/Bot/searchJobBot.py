@@ -184,7 +184,10 @@ def sayHello_findJob(intent_request):
         intent_request['sessionAttributes'],
         'Fulfilled',
         {'contentType': 'PlainText',
-         'content': 'I found {} positions for you.'.format(len(jobs))})
+         'content': 'I found {} positions for you. The most relevant result is {}{}.'.format(
+             len(jobs),
+             "https://recruitingapp-2388.umantis.com",
+             jobs[0]["job_link"])})
 
 
 def findAllJobs(intent_request):
@@ -194,7 +197,9 @@ def findAllJobs(intent_request):
         intent_request['sessionAttributes'],
         'Fulfilled',
         {'contentType': 'PlainText',
-         'content': 'I found {} positions for you. The most relevant result is {}.'.format(len(jobs), "https://recruitingapp-2388.umantis.com/" + jobs[0].job_link)})
+         'content': 'I found {} positions for you. Have a look at {}.'.format(
+             len(jobs),
+             "https://recruitingapp-2388.umantis.com/Jobs/All")})
 
 
 def answer_faq(intent_request, faq_type):
