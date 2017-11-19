@@ -1,4 +1,3 @@
-import json
 import time
 import os
 import logging
@@ -35,6 +34,7 @@ def close(session_attributes, fulfillment_state, message):
 
     return response
 
+
 def elicitIntent(session_attributes, message):
     response = {
         'sessionAttributes': session_attributes,
@@ -46,9 +46,11 @@ def elicitIntent(session_attributes, message):
 
     return response
 
+
 def build_response_card(title, subtitle, options):
     """
-    Build a responseCard with a title, subtitle, and an optional set of options which should be displayed as buttons.
+    Build a responseCard with a title, subtitle, and an optional set of 
+    options which should be displayed as buttons.
     """
     buttons = None
     if options:
@@ -66,19 +68,21 @@ def build_response_card(title, subtitle, options):
         }]
     }
 
+
 def confirmIntent(session_attributes, intent_name, message, slots, slots_to_elicit):
     response = {
         'sessionAttributes': session_attributes,
         'dialogAction': {
             'intentName': intent_name,
             'slots': slots,
-            'slotToElicit': slot_to_elicit,
+            'slotToElicit': slots_to_elicit,
             'type': 'ConfirmIntent',
             'message': message
         }
     }
 
     return response
+
 
 def elicit_slot(session_attributes,
                 intent_name,
@@ -122,25 +126,24 @@ def build_validation_result(is_valid, violated_slot, message_content):
 
 def validate_job_criteria(job_position,
                           job_location,
-                          job_level,
-                          intent_request):
+                          job_level):
     if job_position and job_position.lower() not in JOB_POSITION_TYPES:
         return build_validation_result(
-        False,
-        'slotPosition',
-        'We do not have {}, would you like a different type of position ? Our most popular position is developer.'.format(job_position))
+            False,
+            'slotPosition',
+            'We do not have {}, would you like a different type of position ? Our most popular position is developer.'.format(job_position))
 
     if job_level and job_level.lower() not in JOB_LEVEL_TYPES:
         return build_validation_result(
-        False,
-        'slotLevel',
-                'We do not have {}, would you like a different level? Our most popular level is professional.'.format(job_level))
+            False,
+            'slotLevel',
+            'We do not have {}, would you like a different level? Our most popular level is professional.'.format(job_level))
 
     if job_location and job_location.lower() not in JOB_LOCATION_TYPES:
         return build_validation_result(
-        False,
-        'slotLocation',
-        'We do not have {}, would you like a different location ? Our most popular location is Freiburg.'.format(job_location))
+            False,
+            'slotLocation',
+            'We do not have {}, would you like a different location ? Our most popular location is Freiburg.'.format(job_location))
 
     return build_validation_result(True, None, None)
 
@@ -166,16 +169,16 @@ def sayHello_findJob(intent_request):
     # Use the elicitSlot dialog action to re-prompt for the first violation detected.
         slots = get_slots(intent_request)
 
-        validation_result = validate_job_criteria(job_position, job_location, job_level, intent_request)
-        if not validation_result['isValid']:
-            slots[validation_result['violatedSlot']] = None
-            return elicit_slot(intent_request['sessionAttributes'],
-                              intent_request['currentIntent']['name'],
-                              slots,
-                              validation_result['violatedSlot'],
-                              validation_result['message'])
-        output_session_attributes = intent_request['sessionAttributes'] if intent_request['sessionAttributes'] else {}
-        return delegate(output_session_attributes, get_slots(intent_request))
+    validation_result = validate_job_criteria(job_position, job_location, job_level)
+    if not validation_result['isValid']:
+        slots[validation_result['violatedSlot']] = None
+        return elicit_slot(intent_request['sessionAttributes'],
+                           intent_request['currentIntent']['name'],
+                           slots,
+                           validation_result['violatedSlot'],
+                           validation_result['message'])
+    output_session_attributes = intent_request['sessionAttributes'] if intent_request['sessionAttributes'] else {}
+    return delegate(output_session_attributes, get_slots(intent_request))
 
     jobs = request_jobs(job_position, job_level)
 
@@ -187,18 +190,13 @@ def sayHello_findJob(intent_request):
 
 
 def findAllJobs(intent_request):
-    source = intent_request['invocationSource']
-
-    output_session_attributes = intent_request['sessionAttributes'] if intent_request['sessionAttributes'] else {}
-    #return delegate(output_session_attributes, None})
-
     jobs = request_jobs(None, None)
 
     return close(
-       intent_request['sessionAttributes'],
-       'Fulfilled',
-       {'contentType': 'PlainText',
-        'content': 'I found {} positions for you.'.format(len(jobs))})
+        intent_request['sessionAttributes'],
+        'Fulfilled',
+        {'contentType': 'PlainText',
+         'content': 'I found {} positions for you.'.format(len(jobs))})
 
 
 def answer_faq(intent_request, faq_type):
@@ -210,8 +208,6 @@ def answer_faq(intent_request, faq_type):
 
 
 def startBot(intent_request):
-    source = intent_request['invocationSource']
-
     return close(
         intent_request['sessionAttributes'],
         'Fulfilled',
