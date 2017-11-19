@@ -240,7 +240,7 @@ def dispatch(intent_request):
 
 
 """ --- Main handler --- """
-def handler(event, context):
+def lambda_handler(event, context):
     """
     Route the incoming request based on intent.
     The JSON body of the request is provided in the event slot.
