@@ -192,7 +192,7 @@ def findAllJobs(intent_request):
     output_session_attributes = intent_request['sessionAttributes'] if intent_request['sessionAttributes'] else {}
     #return delegate(output_session_attributes, None})
 
-        jobs = request_jobs(None, None)
+    jobs = request_jobs(None, None)
 
     return close(
        intent_request['sessionAttributes'],
@@ -206,7 +206,7 @@ def answer_faq(intent_request, faq_type):
         intent_request['sessionAttributes'],
         "Fulfilled",
         {'contentType': 'PlainText',
-         'content': get_content(faq_type)})
+         'content': faq.get_content(faq_type)})
 
 
 def startBot(intent_request):
