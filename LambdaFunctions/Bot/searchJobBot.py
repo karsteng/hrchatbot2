@@ -212,8 +212,6 @@ def answer_faq(intent_request, faq_type):
 def startBot(intent_request):
      source = intent_request['invocationSource']
 	
-     output_session_attributes = intent_request['sessionAttributes'] if intent_request['sessionAttributes'] is not None else {}
-     
      return close(intent_request['sessionAttributes'],
      'Fulfilled',
      {'contentType': 'PlainText',
@@ -240,6 +238,8 @@ def dispatch(intent_request):
         return answer_faq(intent_request, faq.FaqType.JOB_STILL_VACANT)
     elif intent_name == 'AskIsJobFulltimeOrParttime':
         return answer_faq(intent_request, faq.FaqType.JOB_FULL_OR_PARTTIME)
+    elif intent_name == 'StartBot':
+        return startBot(intent_request)
         
     raise Exception('Intent with name ' + intent_name + ' not supported')
 
