@@ -2,7 +2,7 @@ import time
 import os
 import logging
 
-from . import job_importer, faq
+import job_importer, faq
 
 
 logger = logging.getLogger()
