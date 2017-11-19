@@ -201,12 +201,12 @@ def findAllJobs(intent_request):
          'content': 'I found {} positions for you.'.format(len(jobs))})
 
 
-def ask_job_still_vacant(intent_request):
+def answer_faq(intent_request, faq_type):
     return close(
         intent_request['sessionAttributes'],
         "Fulfilled",
         {'contentType': 'PlainText', 
-         'content': get_content(faq.FaqType.JOB_STILL_VACANT)})
+         'content': get_content(faq_type)})
     
     
 """ --- Intents --- """
@@ -226,7 +226,9 @@ def dispatch(intent_request):
     elif intent_name == 'SearchAllJobs':
         return findAllJobs(intent_request)
     elif intent_name == 'AskStelleNochVakant':
-        return ask_job_still_vacant(intent_request)
+        return answer_faq(intent_request, faq.FaqType.JOB_STILL_VACANT)
+    elif intent_name == 'AskIsJobFulltimeOrParttime':
+        return answer_faq(intent_request, faq.FaqType.JOB_FULL_OR_PARTTIME)
         
     raise Exception('Intent with name ' + intent_name + ' not supported')
 
