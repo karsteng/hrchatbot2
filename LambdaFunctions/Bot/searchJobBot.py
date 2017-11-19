@@ -222,7 +222,7 @@ def goodbye(intent_request):
         intent_request['sessionAttributes'],
         'Fulfilled',
         {'contentType': 'PlainText',
-         'content': 'Happy to help. Goodbye!<br><br><img src="http://www.reactiongifs.com/r/srcstc.gif"/>'})
+         'content': 'Happy to help. Goodbye!\n\nhttp://www.reactiongifs.com/r/srcstc.gif'})
 
 """ --- Intents --- """
 def dispatch(intent_request):
