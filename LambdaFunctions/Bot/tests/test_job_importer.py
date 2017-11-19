@@ -1,4 +1,4 @@
-from bot import job_importer
+from Bot import job_importer
 from .utilities import get_fixture
 
 

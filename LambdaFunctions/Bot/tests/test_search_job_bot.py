@@ -1,4 +1,4 @@
-from bot import utilities
+from Bot import utilities
 
 def test_job_level_types_enum():
     types = utilities.load_enumeration_values("job_level_types.json")
