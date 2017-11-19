@@ -3,7 +3,7 @@ import time
 import os
 import logging
 
-from . import job_importer, utilities
+from . import job_importer, utilities, faq
 
 
 logger = logging.getLogger()
@@ -51,7 +51,7 @@ def build_response_card(title, subtitle, options):
     Build a responseCard with a title, subtitle, and an optional set of options which should be displayed as buttons.
     """
     buttons = None
-    if options is not None:
+    if options:
         buttons = []
         for i in range(min(5, len(options))):
             buttons.append(options[i])
@@ -174,7 +174,7 @@ def sayHello_findJob(intent_request):
                               slots,
                               validation_result['violatedSlot'],
                               validation_result['message'])
-        output_session_attributes = intent_request['sessionAttributes'] if intent_request['sessionAttributes'] is not None else {}
+        output_session_attributes = intent_request['sessionAttributes'] if intent_request['sessionAttributes'] else {}
         return delegate(output_session_attributes, get_slots(intent_request))
 
     jobs = request_jobs(job_position, job_level)
@@ -189,7 +189,7 @@ def sayHello_findJob(intent_request):
 def findAllJobs(intent_request):
      source = intent_request['invocationSource']
 	
-     output_session_attributes = intent_request['sessionAttributes'] if intent_request['sessionAttributes'] is not None else {}
+     output_session_attributes = intent_request['sessionAttributes'] if intent_request['sessionAttributes'] else {}
      #return delegate(output_session_attributes, None})
 	
  	# TODO integrate the search.py
@@ -198,6 +198,14 @@ def findAllJobs(intent_request):
         'Fulfilled',
         {'contentType': 'PlainText', 
          'content': 'I found 3 positions for you.'})
+
+
+def ask_job_still_vacant(intent_request):
+    return close(
+        intent_request['sessionAttributes'],
+        "Fulfilled",
+        {'contentType': 'PlainText', 
+         'content': get_content(faq.FaqType.JOB_STILL_VACANT)})
     
     
 """ --- Intents --- """
@@ -216,6 +224,8 @@ def dispatch(intent_request):
         return sayHello_findJob(intent_request)	
     elif intent_name == 'SearchAllJobs':
         return findAllJobs(intent_request)
+    elif intent_name == 'AskStelleNochVakant':
+        return ask_job_still_vacant(intent_request)
         
     raise Exception('Intent with name ' + intent_name + ' not supported')
 
