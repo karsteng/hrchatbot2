@@ -2,7 +2,7 @@ import time
 import os
 import logging
 
-from . import job_importer, utilities, faq
+from . import job_importer, faq
 
 
 logger = logging.getLogger()
@@ -42,41 +42,41 @@ def elicitIntent(session_attributes, message):
     return response
 
 
-def build_response_card(title, subtitle, options):
-    """
-    Build a responseCard with a title, subtitle, and an optional set of 
-    options which should be displayed as buttons.
-    """
-    buttons = None
-    if options:
-        buttons = []
-        for i in range(min(5, len(options))):
-            buttons.append(options[i])
+# def build_response_card(title, subtitle, options):
+#     """
+#     Build a responseCard with a title, subtitle, and an optional set of 
+#     options which should be displayed as buttons.
+#     """
+#     buttons = None
+#     if options:
+#         buttons = []
+#         for i in range(min(5, len(options))):
+#             buttons.append(options[i])
 
-    return {
-        'contentType': 'application/vnd.amazonaws.card.generic',
-        'version': 1,
-        'genericAttachments': [{
-            'title': title,
-            'subTitle': subtitle,
-            'buttons': buttons
-        }]
-    }
+#     return {
+#         'contentType': 'application/vnd.amazonaws.card.generic',
+#         'version': 1,
+#         'genericAttachments': [{
+#             'title': title,
+#             'subTitle': subtitle,
+#             'buttons': buttons
+#         }]
+#     }
 
 
-def confirmIntent(session_attributes, intent_name, message, slots, slots_to_elicit):
-    response = {
-        'sessionAttributes': session_attributes,
-        'dialogAction': {
-            'intentName': intent_name,
-            'slots': slots,
-            'slotToElicit': slots_to_elicit,
-            'type': 'ConfirmIntent',
-            'message': message
-        }
-    }
+# def confirmIntent(session_attributes, intent_name, message, slots, slots_to_elicit):
+#     response = {
+#         'sessionAttributes': session_attributes,
+#         'dialogAction': {
+#             'intentName': intent_name,
+#             'slots': slots,
+#             'slotToElicit': slots_to_elicit,
+#             'type': 'ConfirmIntent',
+#             'message': message
+#         }
+#     }
 
-    return response
+#     return response
 
 
 def elicit_slot(session_attributes,
@@ -197,20 +197,20 @@ def findAllJobs(intent_request):
          'content': 'I found {} positions for you.'.format(len(jobs))})
 
 
-def answer_faq(intent_request, faq_type):
-    return close(
-        intent_request['sessionAttributes'],
-        "Fulfilled",
-        {'contentType': 'PlainText',
-         'content': faq.get_content(faq_type)})
+# def answer_faq(intent_request, faq_type):
+#     return close(
+#         intent_request['sessionAttributes'],
+#         "Fulfilled",
+#         {'contentType': 'PlainText',
+#          'content': faq.get_content(faq_type)})
 
 
-def startBot(intent_request):
-    return close(
-        intent_request['sessionAttributes'],
-        'Fulfilled',
-        {'contentType': 'PlainText',
-         'content': 'How can I help?'})
+# def startBot(intent_request):
+#     return close(
+#         intent_request['sessionAttributes'],
+#         'Fulfilled',
+#         {'contentType': 'PlainText',
+#          'content': 'How can I help?'})
 
 
 """ --- Intents --- """
@@ -229,12 +229,12 @@ def dispatch(intent_request):
         return sayHello_findJob(intent_request)
     elif intent_name == 'SearchAllJobs':
         return findAllJobs(intent_request)
-    elif intent_name == 'AskStelleNochVakant':
-        return answer_faq(intent_request, faq.FaqType.JOB_STILL_VACANT)
-    elif intent_name == 'AskIsJobFulltimeOrParttime':
-        return answer_faq(intent_request, faq.FaqType.JOB_FULL_OR_PARTTIME)
-    elif intent_name == 'StartBot':
-        return startBot(intent_request)
+    # elif intent_name == 'AskStelleNochVakant':
+    #     return answer_faq(intent_request, faq.FaqType.JOB_STILL_VACANT)
+    # elif intent_name == 'AskIsJobFulltimeOrParttime':
+    #     return answer_faq(intent_request, faq.FaqType.JOB_FULL_OR_PARTTIME)
+    # elif intent_name == 'StartBot':
+    #     return startBot(intent_request)
 
     raise Exception('Intent with name ' + intent_name + ' not supported')
 
