@@ -210,12 +210,13 @@ def answer_faq(intent_request, faq_type):
     
 
 def startBot(intent_request):
-     source = intent_request['invocationSource']
+    source = intent_request['invocationSource']
 	
-     return close(intent_request['sessionAttributes'],
-     'Fulfilled',
-     {'contentType': 'PlainText',
-      'content': 'How can I help?'})
+    return close(
+        intent_request['sessionAttributes'],
+        'Fulfilled',
+        {'contentType': 'PlainText',
+         'content': 'How can I help?'})
 
 
 """ --- Intents --- """
