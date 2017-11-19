@@ -201,11 +201,12 @@ def findAllJobs(intent_request):
          'content': 'I found {} positions for you.'.format(len(jobs))})
 
 
-def ask_job_still_vacant(intent_request):
+def answer_faq(intent_request, faq_type):
     return close(
         intent_request['sessionAttributes'],
         "Fulfilled",
         {'contentType': 'PlainText', 
+<<<<<<< HEAD
          'content': get_content(faq.FaqType.JOB_STILL_VACANT)})
  
 def startBot(intent_request):
@@ -217,6 +218,10 @@ def startBot(intent_request):
      'Fulfilled',
      {'contentType': 'PlainText',
      'content': 'How can I help?'}) 
+=======
+         'content': get_content(faq_type)})
+    
+>>>>>>> aa891613acad0d4705f371edf339ecbc2b9fac7d
     
 """ --- Intents --- """
 def dispatch(intent_request):
@@ -235,9 +240,15 @@ def dispatch(intent_request):
     elif intent_name == 'SearchAllJobs':
         return findAllJobs(intent_request)
     elif intent_name == 'AskStelleNochVakant':
+<<<<<<< HEAD
         return ask_job_still_vacant(intent_request)
 	elif intent_name == 'StartBot':
         return startBot(intent_request)
+=======
+        return answer_faq(intent_request, faq.FaqType.JOB_STILL_VACANT)
+    elif intent_name == 'AskIsJobFulltimeOrParttime':
+        return answer_faq(intent_request, faq.FaqType.JOB_FULL_OR_PARTTIME)
+>>>>>>> aa891613acad0d4705f371edf339ecbc2b9fac7d
         
     raise Exception('Intent with name ' + intent_name + ' not supported')
 
