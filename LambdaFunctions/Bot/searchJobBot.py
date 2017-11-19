@@ -192,12 +192,13 @@ def findAllJobs(intent_request):
      output_session_attributes = intent_request['sessionAttributes'] if intent_request['sessionAttributes'] else {}
      #return delegate(output_session_attributes, None})
 	
- 	# TODO integrate the search.py
+	 jobs = request_jobs(None, None)
+	 
      return close(
         intent_request['sessionAttributes'],
         'Fulfilled',
         {'contentType': 'PlainText', 
-         'content': 'I found 3 positions for you.'})
+         'content': 'I found {} positions for you.'.format(len(jobs))})
 
 
 def ask_job_still_vacant(intent_request):
