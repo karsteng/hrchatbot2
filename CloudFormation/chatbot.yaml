@@ -10,7 +10,7 @@ Resources:
   Search:
     Type: AWS::Serverless::Function
     Properties:
-      Handler: searchJobBot.handler
+      Handler: searchJobBot.lambda_handler
       Runtime: python3.6
       CodeUri: ../LambdaFunctions/Bot
 
