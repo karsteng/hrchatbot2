@@ -42,26 +42,26 @@ def elicitIntent(session_attributes, message):
     return response
 
 
-# def build_response_card(title, subtitle, options):
-#     """
-#     Build a responseCard with a title, subtitle, and an optional set of 
-#     options which should be displayed as buttons.
-#     """
-#     buttons = None
-#     if options:
-#         buttons = []
-#         for i in range(min(5, len(options))):
-#             buttons.append(options[i])
+def build_response_card(title, subtitle, options):
+    """
+    Build a responseCard with a title, subtitle, and an optional set of 
+    options which should be displayed as buttons.
+    """
+    buttons = None
+    if options:
+        buttons = []
+        for i in range(min(5, len(options))):
+            buttons.append(options[i])
 
-#     return {
-#         'contentType': 'application/vnd.amazonaws.card.generic',
-#         'version': 1,
-#         'genericAttachments': [{
-#             'title': title,
-#             'subTitle': subtitle,
-#             'buttons': buttons
-#         }]
-#     }
+    return {
+        'contentType': 'application/vnd.amazonaws.card.generic',
+        'version': 1,
+        'genericAttachments': [{
+            'title': title,
+            'subTitle': subtitle,
+            'buttons': buttons
+        }]
+    }
 
 
 # def confirmIntent(session_attributes, intent_name, message, slots, slots_to_elicit):
@@ -194,7 +194,7 @@ def findAllJobs(intent_request):
         intent_request['sessionAttributes'],
         'Fulfilled',
         {'contentType': 'PlainText',
-         'content': 'I found {} positions for you.'.format(len(jobs))})
+         'content': 'I found {} positions for you. The most relevant result is {}.'.format(len(jobs), "https://recruitingapp-2388.umantis.com/" + jobs[0].job_link)})
 
 
 def answer_faq(intent_request, faq_type):
