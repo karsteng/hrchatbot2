@@ -45,7 +45,7 @@ def elicitIntent(session_attributes, message):
     }
 
     return response
-    
+
 def build_response_card(title, subtitle, options):
     """
     Build a responseCard with a title, subtitle, and an optional set of options which should be displayed as buttons.
@@ -79,11 +79,11 @@ def confirmIntent(session_attributes, intent_name, message, slots, slots_to_elic
     }
 
     return response
-	
-def elicit_slot(session_attributes, 
-                intent_name, 
-                slots, 
-                slot_to_elicit, 
+
+def elicit_slot(session_attributes,
+                intent_name,
+                slots,
+                slot_to_elicit,
                 message):
     return {
         'sessionAttributes': session_attributes,
@@ -95,7 +95,7 @@ def elicit_slot(session_attributes,
             'message': message
         }
     }
-	
+
 def delegate(session_attributes, slots):
     return {
         'sessionAttributes': session_attributes,
@@ -117,53 +117,53 @@ def build_validation_result(is_valid, violated_slot, message_content):
         'isValid': is_valid,
         'violatedSlot': violated_slot,
         'message': {'contentType': 'PlainText', 'content': message_content}
-    }	
+    }
 
 
-def validate_job_criteria(job_position, 
-                          job_location, 
-                          job_level, 
+def validate_job_criteria(job_position,
+                          job_location,
+                          job_level,
                           intent_request):
-	if job_position and job_position.lower() not in JOB_POSITION_TYPES:
-	    return build_validation_result(
-            False, 
-            'slotPosition',
-            'We do not have {}, would you like a different type of position ? Our most popular position is developer.'.format(job_position))
-			
-	if job_level and job_level.lower() not in JOB_LEVEL_TYPES:
-	    return build_validation_result(
-            False, 
-            'slotLevel',
-		    'We do not have {}, would you like a different level? Our most popular level is professional.'.format(job_level))	
+    if job_position and job_position.lower() not in JOB_POSITION_TYPES:
+        return build_validation_result(
+        False,
+        'slotPosition',
+        'We do not have {}, would you like a different type of position ? Our most popular position is developer.'.format(job_position))
 
-	if job_location and job_location.lower() not in JOB_LOCATION_TYPES:
-	    return build_validation_result(
-            False, 
-            'slotLocation',
-            'We do not have {}, would you like a different location ? Our most popular location is Freiburg.'.format(job_location))	
-	
-	return build_validation_result(True, None, None)
+    if job_level and job_level.lower() not in JOB_LEVEL_TYPES:
+        return build_validation_result(
+        False,
+        'slotLevel',
+                'We do not have {}, would you like a different level? Our most popular level is professional.'.format(job_level))
+
+    if job_location and job_location.lower() not in JOB_LOCATION_TYPES:
+        return build_validation_result(
+        False,
+        'slotLocation',
+        'We do not have {}, would you like a different location ? Our most popular location is Freiburg.'.format(job_location))
+
+    return build_validation_result(True, None, None)
 
 
 def request_jobs(search_job_title, position):
-     job_html = job_importer.get_html_jobs(
-         search_job_title=search_job_title, 
-         position=job_importer.Position[position] if position else None)
-     return list(job_importer.parse_jobs(job_html))
+    job_html = job_importer.get_html_jobs(
+        search_job_title=search_job_title,
+        position=job_importer.Position[position] if position else None)
+    return list(job_importer.parse_jobs(job_html))
 
 
 """ --- Methods used for intents --- """
 def sayHello_findJob(intent_request):
     """ Performs the search job intent """
-    
+
     job_position = get_slots(intent_request)["slotPosition"]
     job_location = get_slots(intent_request)["slotLocation"]
     job_level = get_slots(intent_request)["slotLevel"]
     source = intent_request['invocationSource']
 
     if source == 'DialogCodeHook':
-        # Perform basic validation on the supplied input slots.
-        # Use the elicitSlot dialog action to re-prompt for the first violation detected.
+    # Perform basic validation on the supplied input slots.
+    # Use the elicitSlot dialog action to re-prompt for the first violation detected.
         slots = get_slots(intent_request)
 
         validation_result = validate_job_criteria(job_position, job_location, job_level, intent_request)
@@ -178,7 +178,7 @@ def sayHello_findJob(intent_request):
         return delegate(output_session_attributes, get_slots(intent_request))
 
     jobs = request_jobs(job_position, job_level)
-    
+
     return close(
         intent_request['sessionAttributes'],
         'Fulfilled',
@@ -187,31 +187,31 @@ def sayHello_findJob(intent_request):
 
 
 def findAllJobs(intent_request):
-     source = intent_request['invocationSource']
-	
-     output_session_attributes = intent_request['sessionAttributes'] if intent_request['sessionAttributes'] else {}
-     #return delegate(output_session_attributes, None})
-	
-	 jobs = request_jobs(None, None)
-	 
-     return close(
-        intent_request['sessionAttributes'],
-        'Fulfilled',
-        {'contentType': 'PlainText', 
-         'content': 'I found {} positions for you.'.format(len(jobs))})
+    source = intent_request['invocationSource']
+
+    output_session_attributes = intent_request['sessionAttributes'] if intent_request['sessionAttributes'] else {}
+    #return delegate(output_session_attributes, None})
+
+        jobs = request_jobs(None, None)
+
+    return close(
+       intent_request['sessionAttributes'],
+       'Fulfilled',
+       {'contentType': 'PlainText',
+        'content': 'I found {} positions for you.'.format(len(jobs))})
 
 
 def answer_faq(intent_request, faq_type):
     return close(
         intent_request['sessionAttributes'],
         "Fulfilled",
-        {'contentType': 'PlainText', 
+        {'contentType': 'PlainText',
          'content': get_content(faq_type)})
-    
+
 
 def startBot(intent_request):
     source = intent_request['invocationSource']
-	
+
     return close(
         intent_request['sessionAttributes'],
         'Fulfilled',
@@ -226,13 +226,13 @@ def dispatch(intent_request):
     """
     logger.debug(
         'dispatch userId={}, intentName={}'.format(
-            intent_request['userId'], 
+            intent_request['userId'],
             intent_request['currentIntent']['name']))
     intent_name = intent_request['currentIntent']['name']
 
     # Dispatch to your bot's intent handlers
     if intent_name == 'SearchJob':
-        return sayHello_findJob(intent_request)	
+        return sayHello_findJob(intent_request)
     elif intent_name == 'SearchAllJobs':
         return findAllJobs(intent_request)
     elif intent_name == 'AskStelleNochVakant':
@@ -241,7 +241,7 @@ def dispatch(intent_request):
         return answer_faq(intent_request, faq.FaqType.JOB_FULL_OR_PARTTIME)
     elif intent_name == 'StartBot':
         return startBot(intent_request)
-        
+
     raise Exception('Intent with name ' + intent_name + ' not supported')
 
 

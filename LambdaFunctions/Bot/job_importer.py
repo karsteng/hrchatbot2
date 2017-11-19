@@ -17,10 +17,10 @@ class Position(Enum):
     young_talent = "1000150"
 
 
-def get_html_jobs(search_job_title=None, 
-                  full_search_text=None, 
-                  position=Position.none, 
-                  url=base_url, 
+def get_html_jobs(search_job_title=None,
+                  full_search_text=None,
+                  position=Position.none,
+                  url=base_url,
                   headers=headers):
     """Sends a post request to the umantis job search engine."""
 
@@ -28,7 +28,7 @@ def get_html_jobs(search_job_title=None,
         "Search": "Suchen",
         "token": 0,
         "MultiActionUID": "",
-        "searchFullPositionsConfExtPubAll": 
+        "searchFullPositionsConfExtPubAll":
             full_search_text if full_search_text else "",
         "searchJobTitleExtPub": search_job_title if search_job_title else "",
         "searchPosition": position.value if position and position != Position.none else "",
@@ -70,12 +70,12 @@ def parse_jobs(html_job_response):
                     job_area = span_element.text
 
         yield {
-            "job_id": job_id, 
-            "job_title": job_title, 
-            "job_link": job_link, 
-            "job_location": job_location, 
-            "job_area": job_area, 
-            "online_since": online_since, 
-            "contract_type": contract_type, 
+            "job_id": job_id,
+            "job_title": job_title,
+            "job_link": job_link,
+            "job_location": job_location,
+            "job_area": job_area,
+            "online_since": online_since,
+            "contract_type": contract_type,
             "contract_duration": contract_duration
         }

@@ -7,7 +7,7 @@ def get_json(filename):
     :param string filepath: Path to file.
     """
     filepath = os.path.join(
-        os.path.dirname(os.path.realpath(__file__)), 
+        os.path.dirname(os.path.realpath(__file__)),
         filename)
     with open(filepath) as fh:
         return json.loads(fh.read())
