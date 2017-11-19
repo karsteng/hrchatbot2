@@ -12,11 +12,6 @@ logger.setLevel(logging.DEBUG)
 print('Loading function')
 
 
-JOB_LEVEL_TYPES = utilities.load_enumeration_values("job_level_types.json")
-JOB_LOCATION_TYPES = utilities.load_enumeration_values("job_location_types.json")
-JOB_POSITION_TYPES = utilities.load_enumeration_values("job_position_types.json")
-
-
 """ --- Helper functions --- """
 def get_slots(intent_request):
     return intent_request['currentIntent']['slots']
@@ -127,21 +122,24 @@ def build_validation_result(is_valid, violated_slot, message_content):
 def validate_job_criteria(job_position,
                           job_location,
                           job_level):
-    if job_position and job_position.lower() not in JOB_POSITION_TYPES:
+    position_types = ['manager', 'tester', 'developer', 'java developer', 'software developer', 'qa']
+    if job_position and job_position.lower() not in position_types:
         return build_validation_result(
             False,
             'slotPosition',
             'We do not have {}, would you like a different type of position ? Our most popular position is developer.'.format(job_position))
 
-    if job_level and job_level.lower() not in JOB_LEVEL_TYPES:
+    types = ['professional', 'young_talent']
+    if job_level and job_level.lower() not in types:
         return build_validation_result(
             False,
             'slotLevel',
             'We do not have {}, would you like a different level? Our most popular level is professional.'.format(job_level))
 
-    if job_location and job_location.lower() not in JOB_LOCATION_TYPES:
+    location_types = ['timisoara', 'freiburg']
+    if job_location and job_location.lower() not in location_types:
         return build_validation_result(
-            False,
+            False, 
             'slotLocation',
             'We do not have {}, would you like a different location ? Our most popular location is Freiburg.'.format(job_location))
 
