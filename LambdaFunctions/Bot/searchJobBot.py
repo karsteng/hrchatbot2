@@ -163,18 +163,18 @@ def sayHello_findJob(intent_request):
     source = intent_request['invocationSource']
 
     if source == 'DialogCodeHook':
-    # Perform basic validation on the supplied input slots.
-    # Use the elicitSlot dialog action to re-prompt for the first violation detected.
+        # Perform basic validation on the supplied input slots.
+        # Use the elicitSlot dialog action to re-prompt for the first violation detected.
         slots = get_slots(intent_request)
 
         validation_result = validate_job_criteria(job_position, job_location, job_level)
         if not validation_result['isValid']:
             slots[validation_result['violatedSlot']] = None
             return elicit_slot(intent_request['sessionAttributes'],
-                            intent_request['currentIntent']['name'],
-                            slots,
-                            validation_result['violatedSlot'],
-                            validation_result['message'])
+                               intent_request['currentIntent']['name'],
+                               slots,
+                               validation_result['violatedSlot'],
+                               validation_result['message'])
         output_session_attributes = intent_request['sessionAttributes'] if intent_request['sessionAttributes'] else {}
         return delegate(output_session_attributes, get_slots(intent_request))
 
